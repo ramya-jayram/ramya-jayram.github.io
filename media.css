@@ -54,7 +54,7 @@
     height: auto;
     width: 90%;
     right: -25%;
-    bottom: -15%;
+    bottom: 0%;
 }
 } 
 
@@ -114,7 +114,7 @@
         height: auto;
         width: 30%;
         right: 5%;
-        bottom: -20%;
+        bottom: -13%;
     }
  }
 
@@ -172,7 +172,7 @@
         height: auto;
         width: 27%;
         right: 5%;
-        bottom: -25%;
+        bottom: -20%;
     }
      }
 
@@ -349,6 +349,7 @@ nav{
         text-align: center;
     }
     
+
     
     .smicons{
         height: 24px;
@@ -362,8 +363,7 @@ nav{
         height: auto;
         width: 27%;
         right: 10%;
-        bottom: -15%;
+        bottom: 0%;
     }
 
 }
-
