@@ -305,10 +305,8 @@ nav{
 /* Iphone SE */
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+  and (min-device-width: 250px) 
+  and (max-device-width: 568px) {
 
     nav{
         background-color: white;
