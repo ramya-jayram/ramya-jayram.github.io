@@ -1,0 +1,61 @@
+/* Name font */
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/* Nav */
+nav{
+    background-color: white;
+    width: 98%;
+    margin: 0 auto;
+}
+#logoIcon{
+    height: 32px;
+    width: 32px;
+}
+
+/* Home */
+
+.homecontent{
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#name{
+    font-family: 'Rochester', cursive;
+    font-size: 76px;
+    color: "#000000";
+    text-align: center;
+}
+
+#designation{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: "#000000";
+    text-align: center;
+}
+
+#quote{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    color: "#000000";
+    text-align: center;
+}
+
+#banner{
+    height: 100vh;
+    width: 100%;
+}
+
+.smicons{
+    height: 32px;
+    width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.homephoto{
+    height: auto;
+    width: 100%;
+   margin-top: 13%;
+}
