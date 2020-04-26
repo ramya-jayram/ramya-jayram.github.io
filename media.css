@@ -52,9 +52,9 @@
 .homephoto{
     position: fixed;
     height: auto;
-    width: 92%;
+    width: 95%;
     right: -25%;
-    bottom: -10%;
+    bottom: 0%;
 }
 } 
 
