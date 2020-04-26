@@ -1,6 +1,7 @@
+
 function modefunction(){
     var modechange = document.getElementById('modechange');
-    // console.log(homepic.src);
+    console.log(modechange.src);
 
     if(modechange.src == 'file:///Users/ramya/Documents/Portfolio/image/moon.svg')
     // 
