@@ -366,3 +366,61 @@ nav{
     }
 
 }
+
+@media (max-width: 320px) { 
+    nav{
+        background-color: white;
+        width: 98%;
+        margin: 0 auto;
+    }
+    #logoIcon{
+        height: 32px;
+        width: 32px;
+    }
+    
+    /* Home */
+    
+    .homecontent{
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+    }
+    
+    #name{
+        font-family: 'Rochester', cursive;
+        font-size: 22px;
+        color: "#000000";
+        text-align: center;
+    }
+    
+    #designation{
+        font-family: 'Roboto Slab', serif;
+        font-size: 14px;
+        color: "#000000";
+        text-align: center;
+    }
+    
+    #quote{
+        font-family: 'Roboto Slab', serif;
+        font-size: 10px;
+        color: "#000000";
+        text-align: center;
+    }
+    
+    
+    .smicons{
+        height: 24px;
+        width: auto;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .homephoto{
+        position: fixed;
+        height: auto;
+        width: 20%;
+        right: 10%;
+        bottom: 0%;
+    }
+
+}
