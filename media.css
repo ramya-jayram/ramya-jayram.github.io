@@ -1,4 +1,66 @@
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+      
+    nav{
+        background-color: white;
+        width: 98%;
+        margin: 0 auto;
+    }
+    #logoIcon{
+        height: 32px;
+        width: 32px;
+    } */
+    
+    /* Home */
+    
+     .homecontent{
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+    }
+    
+    #name{
+        font-family: 'Rochester', cursive;
+        font-size: 22px;
+        color: "#000000";
+        text-align: center;
+    }
+    
+    #designation{
+        font-family: 'Roboto Slab', serif;
+        font-size: 14px;
+        color: "#000000";
+        text-align: center;
+    }
+    
+    #quote{
+        font-family: 'Roboto Slab', serif;
+        font-size: 10px;
+        color: "#000000";
+        text-align: center;
+    }
+    
+    
+    .smicons{
+        height: 24px;
+        width: auto;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .homephoto{
+        position: fixed;
+        height: auto;
+        width: 95%;
+        right: -25%;
+        bottom: 0%;
+    }
+    
 
+}
 /* // Extra small devices (portrait phones, less than 576px) */
 /* @media (max-width: 575.98px) {  
     
@@ -371,66 +433,3 @@ nav{
 }*/
 
 
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-      
-    nav{
-        background-color: white;
-        width: 98%;
-        margin: 0 auto;
-    }
-    #logoIcon{
-        height: 32px;
-        width: 32px;
-    } */
-    
-    /* Home */
-    
-     .homecontent{
-        height: 100%;
-        width: 100%;
-        vertical-align: middle;
-    }
-    
-    #name{
-        font-family: 'Rochester', cursive;
-        font-size: 22px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    #designation{
-        font-family: 'Roboto Slab', serif;
-        font-size: 14px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    #quote{
-        font-family: 'Roboto Slab', serif;
-        font-size: 10px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    
-    .smicons{
-        height: 24px;
-        width: auto;
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    
-    .homephoto{
-        position: fixed;
-        height: auto;
-        width: 95%;
-        right: -25%;
-        bottom: 0%;
-    }
-    
-
-}
