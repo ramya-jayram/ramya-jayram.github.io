@@ -1,13 +1,14 @@
 
+var imageaddress = "https://ramya-jayram.github.io/image";
+
 function modefunction(){
     var modechange = document.getElementById('modechange');
     console.log(modechange.src);
 
-    if(modechange.src == 'file:///Users/ramya/Documents/Portfolio/image/moon.svg')
-    // 
+    if(modechange.src == `${imageaddress}/moon.svg`)
     {
         document.body.style.backgroundColor = "#000000";
-        modechange.src = 'file:///Users/ramya/Documents/Portfolio/image/sun.svg';
+        modechange.src = `${imageaddress}/sun.svg`;
 
         var navbar = document.getElementById("topbar");
         navbar.style.background ="#000000"
@@ -18,15 +19,12 @@ function modefunction(){
         document.getElementById("logoIcon").style.fill="white";
 
         document.body.style.color="#ffffff";
-        
-        var homepic = document.getElementById('homepic');
-        homepic.src = 'file:///Users/ramya/Documents/Portfolio/image/ramyadark.png';
     } 
     // 
     else
     {
         document.body.style.backgroundColor = "#ffffff";
-        modechange.src = 'file:///Users/ramya/Documents/Portfolio/image/moon.svg';
+        modechange.src = `${imageaddress}/moon.svg`;
 
         var navbar = document.getElementById("topbar");
         navbar.style.background ="#ffffff"
@@ -37,9 +35,6 @@ function modefunction(){
         document.getElementById("logoIcon").style.fill="#000000";
 
         document.body.style.color="#000000";
-
-        var homepic = document.getElementById("homepic");
-        homepic.src = 'file:///Users/ramya/Documents/Portfolio/image/ramyadark.png';
 
         
 
