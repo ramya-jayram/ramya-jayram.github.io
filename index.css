@@ -61,6 +61,6 @@ nav{
 }
 
 #textcontainer{
-    position: absolute;
+    position: fixed;
     top:30%
 }
