@@ -1,5 +1,5 @@
 
-var imageaddress = "https://ramya-jayram.github.io/image";
+var imageaddress = "https://ramyajayaram.com/image";
 
 
 function modefunction(){

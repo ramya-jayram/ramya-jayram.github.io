@@ -97,7 +97,7 @@ nav a :hover{
     text-align: center;
 }
 
-.bounce-2 {
+.bounce-2 :hover {
     animation-name: bounce-2;
     animation-timing-function: ease;
 }
