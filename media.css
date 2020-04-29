@@ -58,6 +58,7 @@
         padding-left: 10%;
     }
     
+
 }
 
 /*  Mobile */
@@ -122,6 +123,15 @@
 
     
     }
+
+    .animatecontainer{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+    }
+
+    
 
 }
 
