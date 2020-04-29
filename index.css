@@ -85,7 +85,7 @@ nav a :hover{
     padding-right: 16px;
 }
 
-.caretanimate{
+.caretanimate:hover{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
@@ -97,7 +97,7 @@ nav a :hover{
     text-align: center;
 }
 
-.bounce-2 :hover {
+.bounce-2{
     animation-name: bounce-2;
     animation-timing-function: ease;
 }
