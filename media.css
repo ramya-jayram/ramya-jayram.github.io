@@ -1,371 +1,127 @@
-
-/* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {  
-    
-    nav{
-    background-color: white;
-    width: 98%;
-    margin: 0 auto;
-}
-#logoIcon{
-    height: 32px;
-    width: 32px;
-}
-
-/* Home */
-
-.homecontent{
-    height: 100%;
-    width: 100%;
-    vertical-align: middle;
-}
-
-#name{
-    font-family: 'Rochester', cursive;
-    font-size: 22px;
-    color: "#000000";
-    text-align: center;
-}
-
-#designation{
-    font-family: 'Roboto Slab', serif;
-    font-size: 14px;
-    color: "#000000";
-    text-align: center;
-}
-
-#quote{
-    font-family: 'Roboto Slab', serif;
-    font-size: 10px;
-    color: "#000000";
-    text-align: center;
-}
+/* lower resolution laptops */
 
 
-.smicons{
-    height: 24px;
-    width: auto;
-    padding-left: 8px;
-    padding-right: 8px;
-}
+@media screen 
+  and (min-device-width: 1080px) 
+  and (max-device-width: 1400px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
 
-.homephoto{
-    position: fixed;
-    height: auto;
-    width: 95%;
-    right: -25%;
-    bottom: 0%;
-}
-} 
+    .imagecontainer{
+        height: 90vh;
+        padding-top: 8%;
+    }
+    
+    .textcontainer{
+        padding-top: 13%;
+        padding-left: 10%;
+    }
 
-
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    nav{
-        background-color: white;
-        width: 98%;
-        margin: 0 auto;
-    }
-    #logoIcon{
-        height: 32px;
-        width: 32px;
-    }
-    
-    /* Home */
-    
-    .homecontent{
-        height: 100%;
-        width: 100%;
-        vertical-align: middle;
-    }
-    
-    #name{
-        font-family: 'Rochester', cursive;
-        font-size: 40px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    #designation{
-        font-family: 'Roboto Slab', serif;
-        font-size: 20px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    #quote{
-        font-family: 'Roboto Slab', serif;
-        font-size: 15px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    
-    .smicons{
-        height: 32px;
-        width: auto;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    
-    .homephoto{
-        position: fixed;
-        height: auto;
-        width: 30%;
-        right: 5%;
-        bottom: -18%;
-    }
- }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {  /* Nav */
-    nav{
-        background-color: white;
-        width: 98%;
-        margin: 0 auto;
-    }
-    #logoIcon{
-        height: 32px;
-        width: 32px;
-    }
-    
-    /* Home */
-    
-    .homecontent{
-        height: 100%;
-        width: 100%;
-        vertical-align: middle;
-    }
-    
-    #name{
-        font-family: 'Rochester', cursive;
-        font-size: 56px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    #designation{
-        font-family: 'Roboto Slab', serif;
-        font-size: 24px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    #quote{
-        font-family: 'Roboto Slab', serif;
-        font-size: 16px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    
-    .smicons{
-        height: 32px;
-        width: auto;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    
-    .homephoto{
-        position: fixed;
-        height: auto;
-        width: 27%;
-        right: 5%;
-        bottom: -5%;
-    }
-     }
-
-/* // Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) and (max-width: 1199.98px) {  /* Nav */
-    nav{
-        background-color: white;
-        width: 98%;
-        margin: 0 auto;
-    }
-    #logoIcon{
-        height: 32px;
-        width: 32px;
-    }
-    
-    /* Home */
-    
-    .homecontent{
-        height: 100%;
-        width: 100%;
-        vertical-align: middle;
-    }
-    
-    #name{
-        font-family: 'Rochester', cursive;
-        font-size: 76px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    #designation{
-        font-family: 'Roboto Slab', serif;
-        font-size: 30px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    #quote{
-        font-family: 'Roboto Slab', serif;
-        font-size: 18px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    
-    .smicons{
-        height: 32px;
-        width: auto;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    
-    .homephoto{
-        position: fixed;
-        height: auto;
-        width: 35%;
-        right: 5%;
-        bottom: 0%;
+    .animatecontainer{
+        margin: 0px !important;
+        padding: 0%;
     }
 }
 
+/*  Non-Retina */
 
+@media screen 
+  and (min-device-width: 1400px) 
+  and (max-device-width: 2600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
 
+    .imagecontainer{
+        height: 90vh;
+        padding-top: 15%;
+    }
 
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
-
-    /* Nav */
-nav{
-    background-color: white;
-    width: 98%;
-    margin: 0 auto;
-}
-#logoIcon{
-    height: 32px;
-    width: 32px;
-}
-
-/* Home */
-
-.homecontent{
-    height: 100%;
-    width: 100%;
-    vertical-align: middle;
+    .textcontainer{
+        padding-top: 20%;
+        padding-left: 10%;
+    }
+    
 }
 
-#name{
-    font-family: 'Rochester', cursive;
-    font-size: 76px;
-    color: "#000000";
-    text-align: center;
-}
-
-#designation{
-    font-family: 'Roboto Slab', serif;
-    font-size: 30px;
-    color: "#000000";
-    text-align: center;
-}
-
-#quote{
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-    color: "#000000";
-    text-align: center;
-}
-
-
-.smicons{
-    height: 32px;
-    width: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.homephoto{
-    position: fixed;
-    height: auto;
-    width:30%;
-    right: 5%;
-    bottom: -5%;
-}
-
-}
-
-
-/* Iphone SE */
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 2600px) 
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+  and (min-resolution: 192dpi) { 
 
-    nav{
-        background-color: white;
-        width: 98%;
-        margin: 0 auto;
+    .imagecontainer{
+        height: 90vh;
+        padding-top: 15%;
     }
-    #logoIcon{
-        height: 32px;
-        width: 32px;
+
+    .textcontainer{
+        padding-top: 20%;
+        padding-left: 10%;
     }
     
-    /* Home */
-    
-    .homecontent{
+}
+
+/*  Mobile */
+
+@media only screen and (min-width: 0px) and (max-width: 479px){
+     
+
+    .homepage{
+        position: relative;
+        height: 90vh;
+    }
+
+    .imagecontainer{
+        padding-top: 30%;
         height: 100%;
-        width: 100%;
-        vertical-align: middle;
+        text-align: center;
+    }
+
+    .homephoto{
+        width: 60%;
+        height: auto;
+        border: 2px solid #eeeeee ;
+        border-radius: 100%;
+        opacity: 50%;
+    }
+
+    .textcontainer{
+        padding: 10% 0%;
     }
     
     #name{
         font-family: 'Rochester', cursive;
+        font-size: 44px;
+        color: "#000000";
+        text-align: center;
+    }
+    
+    #designation{
+        font-family: 'Roboto Slab', serif;
         font-size: 22px;
         color: "#000000";
         text-align: center;
     }
     
-    #designation{
+    #quote{
         font-family: 'Roboto Slab', serif;
         font-size: 14px;
         color: "#000000";
         text-align: center;
     }
     
-    #quote{
-        font-family: 'Roboto Slab', serif;
-        font-size: 10px;
-        color: "#000000";
-        text-align: center;
+    .smicons{
+        height: 32px;
+        width: auto;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-    
+
+    #caret{
+        padding: 0;
+        text-align: center;
 
     
-    .smicons{
-        height: 24px;
-        width: auto;
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    
-    .homephoto{
-        position: fixed;
-        height: auto;
-        width: 27%;
-        right: 10%;
-        bottom: 0%;
     }
 
 }
-
 

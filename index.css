@@ -2,23 +2,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+/* Scroll modified */
+
+html {
+    overflow:   scroll;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+
 /* Nav */
+
 nav{
-    background-color: white;
-    width: 98%;
+    background-color:rgba(255, 255, 255, 0.5);
+    width: 100%;
     margin: 0 auto;
 }
+
+nav a :hover{
+    cursor: pointer;
+}
+
+#logo{
+    margin-left: 3%;
+}
+
+#switch{
+    margin-right: 3%;
+}
+
 #logoIcon{
     height: 32px;
     width: 32px;
 }
 
-/* Home */
+/* Home page */
 
-.homecontent{
-    height: 100%;
-    width: 100%;
-    vertical-align: middle;
+.imagecontainer{
+    height: 90vh;
+    padding-top: 15%;
+}
+
+.homephoto{
+    width: 70%;
+    height: auto;
+    border: 2px solid #eeeeee ;
+    border-radius: 100%;
+    opacity: 50%;
+}
+
+.textcontainer{
+    padding-top: 20%;
+    padding-left: 10%;
 }
 
 #name{
@@ -49,13 +85,27 @@ nav{
     padding-right: 16px;
 }
 
-.homephoto{
-    height: auto;
-    width: 100%;
-   margin-top: 13%;
+.caretanimate{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
 }
 
-#textcontainer{
-    position: fixed;
-    top:30%
+.animatecontainer{
+    width: 100%;
+    display: block;
+    text-align: center;
 }
+
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/*  About me */
+
