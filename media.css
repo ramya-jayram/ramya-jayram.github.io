@@ -1,3 +1,8 @@
+
+body{
+    font-family: Roboto Slab;   
+}
+
 /* lower resolution laptops */
 
 
@@ -6,20 +11,58 @@
   and (max-device-width: 1400px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
 
-    .imagecontainer{
+    /* Home Page */
+
+    .textcontainer{
         height: 90vh;
-        padding-top: 8%;
+        padding-top: 15%;
+        text-align: center;
     }
     
-    .textcontainer{
-        padding-top: 13%;
-        padding-left: 10%;
+    #name{
+        font-family: 'Rochester', cursive;
+        font-size: 72px;
+        padding: 10px 0px;
+        background-color: #FA8BFF;
+        background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 30%, #2BFF88 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    }
+    
+    #designation{
+        font-family: 'Roboto Slab', serif;
+        font-size: 24px;
+    }
+    
+    #quote{
+        font-family: 'Roboto Slab', serif;
+        font-size: 16px;
+        padding-bottom: 1%;   
+    }
+    
+    .smicons{
+        height: 24px;
+        width: auto;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
-    .animatecontainer{
-        margin: 0px !important;
-        padding: 0%;
+    /* About */
+
+    .abtcontent{
+        text-align: justify;
+        padding-top: 0%;
+        font-family: Roboto Slab;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.04em;
     }
+    
+    .abouthead{
+        font-size: 16px;
+    }
+    
 }
 
 /*  Non-Retina */
@@ -29,16 +72,51 @@
   and (max-device-width: 2600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
 
-    .imagecontainer{
-        height: 90vh;
-        padding-top: 15%;
-    }
+   /* Home page */
 
-    .textcontainer{
-        padding-top: 20%;
-        padding-left: 10%;
-    }
-    
+.textcontainer{
+    height: 90vh;
+    padding-top: 20%;
+    text-align: center;
+}
+
+#name{
+    font-family: 'Rochester', cursive;
+    font-size: 80px;
+    padding: 10px 0px;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 30%, #2BFF88 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#designation{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+}
+
+#quote{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    padding-bottom: 1%;   
+}
+
+/* About */
+
+.abtcontent{
+    text-align: justify;
+    padding-top: 0%;
+    font-family: Roboto Slab;
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+}
+
+.abouthead{
+    font-size: 18px;
+}
+
 }
 
 /* ----------- Retina Screens ----------- */
@@ -48,16 +126,50 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
 
-    .imagecontainer{
-        height: 90vh;
-        padding-top: 15%;
-    }
+       /* Home page */
 
-    .textcontainer{
-        padding-top: 20%;
-        padding-left: 10%;
-    }
-    
+.textcontainer{
+    height: 90vh;
+    padding-top: 20%;
+    text-align: center;
+}
+
+#name{
+    font-family: 'Rochester', cursive;
+    font-size: 88px;
+    padding: 10px 0px;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 30%, #2BFF88 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#designation{
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+}
+
+#quote{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    padding-bottom: 1%;   
+}
+
+/* About */
+
+.abtcontent{
+    text-align: justify;
+    padding-top: 0%;
+    font-family: Roboto Slab;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+}
+
+.abouthead{
+    font-size: 18px;
+}
 
 }
 
@@ -65,63 +177,39 @@
 
 @media only screen and (min-width: 0px) and (max-width: 479px){
      
+       /* Home page */
 
     .homepage{
         position: relative;
-        height: 90vh;
-    }
-
-    .imagecontainer{
-        padding-top: 30%;
-        height: 100%;
-        text-align: center;
-    }
-
-    .homephoto{
-        width: 60%;
-        height: auto;
-        border: 2px solid #eeeeee ;
-        border-radius: 100%;
-        opacity: 50%;
-    }
+        height: 93vh;
+    }   
 
     .textcontainer{
-        padding: 10% 0%;
+        height: 80vh;
+        padding-top: 60%;
+        text-align: center;
     }
-    
+
     #name{
         font-family: 'Rochester', cursive;
-        font-size: 44px;
-        color: "#000000";
-        text-align: center;
+        font-size: 40px;
+        padding: 10px 0px;
+        background-color: #FA8BFF;
+        background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 30%, #2BFF88 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     }
-    
+
     #designation{
         font-family: 'Roboto Slab', serif;
-        font-size: 22px;
-        color: "#000000";
-        text-align: center;
+        font-size: 20px;
     }
-    
+
     #quote{
         font-family: 'Roboto Slab', serif;
         font-size: 14px;
-        color: "#000000";
-        text-align: center;
-    }
-    
-    .smicons{
-        height: 32px;
-        width: auto;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    #caret{
-        padding: 0;
-        text-align: center;
-
-    
+        padding-bottom: 1%;   
     }
 
     .animatecontainer{
@@ -131,7 +219,125 @@
         text-align: center;
     }
 
-    
+    /*  About me */
+
+    .aboutcontainer{
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .abtphotocontainer{
+        text-align: center;
+    }
+
+    .aboutme{
+        padding-top: 5%;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: #209AB6;
+        text-align: center;
+        line-height: 32px;
+        margin-bottom: 4px;
+    }
+
+    #line{
+        width: 60px;
+        height: 5px;
+        margin: 0 auto;
+        background-color: #FA8BFF;
+        background-image: linear-gradient(35deg, #FA8BFF 0%, #2BD2FF 46.88%, #2BFF88 90.07%);
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+
+    .abtcontent{
+        /* text-align: justify; */
+        padding-top: 2%;
+        font-family: Roboto Slab;
+        font-size: 13px;
+        line-height: 1.7;
+        letter-spacing: 0.04em;
+    }
+
+    .abouthead{
+        font-size: 15px;
+    }
+
+    /* Education & Experience */
+
+    .eduexpcontainer{
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+
+    .education{
+        padding-top: 5%;
+        font-family: Roboto Slab;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: #209AB6;
+        line-height: 32px;
+        margin-bottom: 4px;
+    }
+
+    .experience{
+        padding-top: 10%;
+        font-family: Roboto Slab;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: #209AB6;
+        line-height: 32px;
+        margin-bottom: 4px;
+    }
+
+    .card{
+        background: #FCFCFC;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        border: none;
+        padding: 5px 12px;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .card p{
+        margin-bottom: 0px;
+        padding: 6px 0px;
+    }
+
+    .yearcontainer p{
+        font-family: Roboto Slab;
+        line-height: 16px;
+        font-size: 12px;
+    }
+
+    .cardcontainer{
+        padding-top: 5px;
+    }
+
+    .title{
+        font-family: Roboto Slab;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .duration{
+        font-family: Roboto Slab;
+        font-size: 9px;
+        line-height: 14px;
+    }
+
+    .place{
+        font-family: Roboto Slab;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
 
 }
 

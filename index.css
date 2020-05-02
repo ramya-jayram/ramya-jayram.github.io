@@ -1,15 +1,29 @@
 /* Name font */
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
 /* Scroll modified */
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 html {
-    overflow:   scroll;
+    overflow: scroll;
+    scroll-behavior: smooth;
   }
-  ::-webkit-scrollbar {
+
+  body{
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+
+/* make scrollbar transparent */
+
+::-webkit-scrollbar {
       width: 0px;
-      background: transparent; /* make scrollbar transparent */
+      background: transparent; 
   }
 
 /* Nav */
@@ -39,43 +53,63 @@ nav a :hover{
 
 /* Home page */
 
-.imagecontainer{
-    height: 90vh;
-    padding-top: 15%;
-}
-
-.homephoto{
-    width: 70%;
-    height: auto;
-    border: 2px solid #eeeeee ;
-    border-radius: 100%;
-    opacity: 50%;
-}
-
 .textcontainer{
+    height: 90vh;
     padding-top: 20%;
-    padding-left: 10%;
+    text-align: center;
 }
 
 #name{
     font-family: 'Rochester', cursive;
-    font-size: 76px;
-    color: "#000000";
-    text-align: center;
+    font-size: 80px;
+    padding: 10px 0px;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 30%, #2BFF88 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    transform: translateY(-600px);
+    animation: 1s slideIn ease-in-out forwards 0.1s;
+    z-index: 10;
+    opacity: 0;
+    position: relative;
 }
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeIn {
+
+    0%{
+        opacity: 0;
+    }
+
+    70%{
+        opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
 
 #designation{
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
-    color: "#000000";
-    text-align: center;
+    animation: 2s fadeIn ease-in forwards 0s;
 }
 
 #quote{
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
-    color: "#000000";
-    text-align: center;
+    padding-bottom: 1%;   
+    animation: 2s fadeIn ease-in forwards 0s;
 }
 
 .smicons{
@@ -83,9 +117,24 @@ nav a :hover{
     width: auto;
     padding-left: 16px;
     padding-right: 16px;
+    animation: 2s fadeIn ease-in forwards 0s;
+    transform: translateZ(0px);
+    transition-duration: .3s;
+    transition-property: transform;
+  }
+  
+  .smicons:hover {
+    transform: scale(1.3);
+  }
+
+
+/* Caret - down */
+
+#caret{
+    opacity: 0.2;
 }
 
-.caretanimate:hover{
+.caretanimate{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
@@ -97,7 +146,7 @@ nav a :hover{
     text-align: center;
 }
 
-.bounce-2{
+.bounce-2 {
     animation-name: bounce-2;
     animation-timing-function: ease;
 }
@@ -109,3 +158,142 @@ nav a :hover{
 
 /*  About me */
 
+#about{
+    width: 100%;
+    background: #f9f9fA;  
+    margin-top: 5%; 
+}
+
+.aboutcontainer{
+    margin: 0 auto;
+    padding: 60px 0px;
+    animation-direction: reverse;
+  
+}
+
+.aboutphoto{
+    text-align: center;
+    /* float: right; */
+    height: 100%;
+    width: auto;
+}
+
+
+.aboutme{
+    padding-top: 0%;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #209AB6;
+    line-height: 32px;
+    margin-bottom: 4px;
+}
+
+#line{
+    width: 60px;
+    height: 5px;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(35deg, #FA8BFF 0%, #2BD2FF 46.88%, #2BFF88 90.07%);
+    border-radius: 15px;
+    margin-bottom: 3%;
+}
+
+.abtcontent{
+    text-align: justify;
+    padding-top: 0%;
+    font-family: Roboto Slab;
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+}
+
+.abouthead{
+    font-size: 18px;
+}
+
+.abt{
+    margin-bottom: 3%;
+}
+
+/* Education & Experience */
+
+.eduexpcontainer{
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.education{
+    padding-top: 5%;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #209AB6;
+    line-height: 32px;
+    margin-bottom: 4px;
+}
+
+.experience{
+    padding-top: 5%;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #209AB6;
+    line-height: 32px;
+    margin-bottom: 4px;
+}
+
+.card{
+    background: #FCFCFC;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 24px;
+    width: 97%;
+    margin-top: 5%;
+}
+
+.card p{
+    margin-bottom: 0px;
+    padding: 6px 0px;
+}
+
+.year{
+    font-family: Roboto Slab;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.cardcontainer{
+    padding-top: 5px;
+}
+
+.title{
+    font-family: Roboto Slab;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.duration{
+    font-family: Roboto Slab;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.place{
+    font-family: Roboto Slab;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/* skillssection CSS */
+
+.skillssection{
+    padding-top: 5%;
+    height: 10vh;
+    background-color: #fcfcfc;
+}
