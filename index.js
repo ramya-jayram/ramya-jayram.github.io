@@ -1,4 +1,4 @@
-var imageaddress = "http://localhost:8080/image";
+var imageaddress = "https://ramyajayaram.com/image";
 
 
 function modefunction(){
