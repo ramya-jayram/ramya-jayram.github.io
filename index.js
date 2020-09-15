@@ -1,5 +1,4 @@
-
-var imageaddress = "https://ramyajayaram.com/image";
+var imageaddress = "http://localhost:8080/image";
 
 
 function modefunction(){
@@ -30,6 +29,15 @@ function modefunction(){
             card[i].style.background = "#191919";
             card[i].className = card[i].className + " newclass";
         }
+
+        var skillstoolssection = document.querySelectorAll(".skillstoolssection");
+        for (var i=0; i<skillstoolssection.length; i++) 
+        {
+            skillstoolssection[i].style.background = "#191919";
+            skillstoolssection[i].className = skillstoolssection[i].className + " newclass";
+        }
+
+        document.getElementById("chartdiv").style.color="white";
         
     } 
     //  Day Mode
@@ -57,6 +65,15 @@ function modefunction(){
             card[i].className = card[i].className + " newclass";
         }
 
+        var skillstoolssection = document.querySelectorAll(".skillstoolssection");
+        for (var i=0; i<skillstoolssection.length; i++) 
+        {
+            skillstoolssection[i].style.background = "#fcfcfc";
+            skillstoolssection[i].className = skillstoolssection[i].className + " newclass";
+        }
+
     }
 
 }
+
+

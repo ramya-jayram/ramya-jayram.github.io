@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramya Jayaram</title>
-    <link rel="shortcut icon" type="image/png" href="https://ramyajayaram.com/image/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./image/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://ramyajayaram.com/index.css">
-    <link rel="stylesheet" href="https://ramyajayaram.com/media.css">
-    <script src="https://ramyajayaram.com/index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+  
 </head>
 <body>
     
@@ -22,7 +25,7 @@
             </svg>   
         </a>
         <a class="navbar-brand"  onclick="modefunction();" id="switch">
-          <img id="modechange" src="https://ramyajayaram.com/image/moon.svg" width="24" height="24" alt="">
+          <img id="modechange" src="./image/moon.svg" width="24" height="24" alt="">
         </a>
       </nav>
 
@@ -36,22 +39,22 @@
                 <h3 id="name">{ Ramya Jayaram }</h3>
                 <p id="designation">UI / UX Designer</p>
                 <p id="quote"> I strive for two things in design: simplicity and clarity. Great design is born of those two things.</p>
-
                 <div class="text-center">
                   <a href="https://www.linkedin.com/in/ramya-jayaram/">
-                    <img class="smicons" src="https://ramyajayaram.com/image/LinkedIn.png" alt="">
+                    <img class="smicons" src="./image/LinkedIn.png" alt=""/>
                   </a>
                   <a href="https://www.behance.net/ramyajayaram">
-                    <img class="smicons" src="https://ramyajayaram.com/image/Behance.png" alt="">
+                    <img class="smicons" src="./image/Behance.png" alt=""/>
                   </a>
                   <a href="https://dribbble.com/RamyaJayaram">
-                    <img class="smicons" src="https://ramyajayaram.com/image/Dribble.png" alt="">
+                    <img class="smicons" src="./image/Dribble.png" alt=""/>
                   </a>
                 </div>
 
               </div>
             </div>
           </div>
+         
           <div class="row animatecontainer">
             <div id="caret">
               <a href="#about">
@@ -71,7 +74,7 @@
         <div class="container aboutcontainer">
           <div class="row">
             <div class="col-md-3 my-auto abtphotocontainer" data-aos="slide-right" data-aos-duration="1000">
-              <img class="aboutphoto" src="https://ramyajayaram.com/image/dabout.png" alt="">
+              <img class="aboutphoto" src="./image/dabout.png" alt="">
             </div>
             <div class="col-md-9 order-sm-2 order-md-2 order-lg-2 order-xl-2 aboutcontent" data-aos="slide-left" data-aos-duration="1000">
               <p class="aboutme">About Me</p>
@@ -125,77 +128,77 @@
  
                 <div class="card" data-aos="fade-up" data-aos-duration="1500">
  
-                  <div class="row">
-                    <div class="col-3 yearcontainer" >
-                      <p class="Year">May 2019</p>
-                    </div>
-                    <div class="col-8">
-                      <p class="title">Bachelor of Engineering - CSE</p>
-                    </div>
-                  </div>
-  
-                  <div class="row">
-                    <div class="col-3">
-                      <p class="duration">( 3 Years )</p>
-                    </div>
-                    <div class="col-8">
-                      <p class="place">Global Academy Of Technology</p>
-                    </div>
-                  </div>
-  
-                </div>
-  
-                  <!-- DSIT card -->
-  
-                  <div class="card" data-aos="fade-up" data-aos-duration="1500">
-  
-                    <div class="row">
-                      <div class="col-3 yearcontainer">
-                        <p class="Year">June 2015</p>
-                      </div>
-                      <div class="col-8">
-                        <p class="title">Diploma in Computer Science</p>
-                      </div>
-                    </div>
-    
-                    <div class="row">
-                      <div class="col-3">
-                        <p class="duration">( 3 Years )</p>
-                      </div>
-                      <div class="col-8">
-                        <p class="place">Dayananda Sagar Institute of Technology</p>
-                      </div>
-                    </div>
-    
-                  </div>
-  
-                  <!-- SSLC card -->
-  
-                  <div class="card" data-aos="fade-up" data-aos-duration="1500">
-  
-                    <div class="row">
-                      <div class="col-3 yearcontainer">
-                        <p class="Year">April 2010</p>
-                      </div>
-                      <div class="col-8">
-                        <p class="title">SSLC - State Board</p>
-                      </div>
-                    </div>
-    
-                    <div class="row">
-                      <div class="col-3">
-                        <p class="duration">( SSLC )</p>
-                      </div>
-                      <div class="col-8">
-                        <p class="place">BET Convent</p>
-                      </div>
-                    </div>
-    
-                  </div>
-  
-              </div>
+                 <div class="row">
+                   <div class="col-3 yearcontainer" >
+                     <p class="Year">May 2019</p>
+                   </div>
+                   <div class="col-8">
+                     <p class="title">Bachelor of Engineering - CSE</p>
+                   </div>
+                 </div>
+ 
+                 <div class="row">
+                   <div class="col-3">
+                     <p class="duration">( 3 Years )</p>
+                   </div>
+                   <div class="col-8">
+                     <p class="place">Global Academy Of Technology</p>
+                   </div>
+                 </div>
+ 
+               </div>
+ 
+                 <!-- DSIT card -->
+ 
+                 <div class="card" data-aos="fade-up" data-aos-duration="1500">
+ 
+                   <div class="row">
+                     <div class="col-3 yearcontainer">
+                       <p class="Year">June 2015</p>
+                     </div>
+                     <div class="col-8">
+                       <p class="title">Diploma in Computer Science</p>
+                     </div>
+                   </div>
+   
+                   <div class="row">
+                     <div class="col-3">
+                       <p class="duration">( 3 Years )</p>
+                     </div>
+                     <div class="col-8">
+                       <p class="place">Dayananda Sagar Institute of Technology</p>
+                     </div>
+                   </div>
+   
+                 </div>
+ 
+                 <!-- SSLC card -->
+ 
+                 <div class="card" data-aos="fade-up" data-aos-duration="1500">
+ 
+                   <div class="row">
+                     <div class="col-3 yearcontainer">
+                       <p class="Year">April 2010</p>
+                     </div>
+                     <div class="col-8">
+                       <p class="title">SSLC - State Board</p>
+                     </div>
+                   </div>
+   
+                   <div class="row">
+                     <div class="col-3">
+                       <p class="duration">( SSLC )</p>
+                     </div>
+                     <div class="col-8">
+                       <p class="place">BET Convent</p>
+                     </div>
+                   </div>
+   
+                 </div>
  
              </div>
+
+            </div>
 
             <div class="col-md-6 order-sm-2 order-md-2 order-lg-2 order-xl-2">
               <div data-aos="fade-up" data-aos-duration="1500">
@@ -288,9 +291,332 @@
       <!-- Skills -->
 
       <section class="skillssection">
+        <div class="container-fluid Skillscontainer">
+         
+          <div class="row">
+
+            <div class="col-md-6 " >
+
+              <div>
+                <p class="education" >Design</p>
+                <div id="line"></div>
+              </div>
+              
+                <div class="row">
+                  <div class="col p-0">
+                    
+                      <div class="skills">
+                          <p>Interface Design</p>
+                          <div class="progress">
+                              <div class="progress-bar percent" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="slide-right" data-aos-duration="2000">90%</div>
+                            </div>
+                      </div>
 
 
+                      <div class="skills">
+                          <p>Experience Design</p>
+                          <div class="progress">
+                              <div class="progress-bar percent" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="slide-right" data-aos-duration="2000">80%</div>
+                            </div>
+                      </div>
+
+                      <div class="skills">
+                          <p>Graphic Design</p>
+                          <div class="progress">
+                              <div class="progress-bar percent" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="slide-right" data-aos-duration="2000">90%</div>
+                            </div>
+                      </div>
+
+
+                      <div class="skills">
+                          <p>Illustration Design</p>
+                          <div class="progress">
+                              <div class="progress-bar percent" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="slide-right" data-aos-duration="2000">80%</div>
+                            </div>
+                       </div>
+                   </div>
+                  </div>
+
+            </div>
+
+            <div class="col-md-6 order-sm-2 order-md-2 order-lg-2 order-xl-2">
+              <div>
+                <p class="experience">Coding</p>
+              <div id="line"></div>
+              </div>
+
+              <div class="row">
+                <div class="col p-0">
+                  
+                    <div class="skills">
+                        <p>HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar percent percent-tech" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="slide-right" data-aos-duration="2000">90%</div>
+                          </div>
+                    </div>
+
+
+                    <div class="skills">
+                        <p>CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar percent percent-tech" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="slide-right" data-aos-duration="2000">80%</div>
+                          </div>
+                    </div>
+
+                    <div class="skills">
+                        <p>Bootstrap</p>
+                        <div class="progress">
+                            <div class="progress-bar percent percent-tech" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="slide-right" data-aos-duration="2000">90%</div>
+                          </div>
+                    </div>
+
+
+                    <div class="skills">
+                        <p>Javascript</p>
+                        <div class="progress">
+                            <div class="progress-bar percent percent-tech" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="slide-right" data-aos-duration="2000">80%</div>
+                          </div>
+                     </div>
+                 </div>
+                </div>
+           
+            </div>
+
+          </div>
+
+
+        </div>
+          
       </section>
+
+       <!-- Skills Ends -->
+
+
+      <!-- Tools Section starts here -->
+
+      <div class="container-fluid toolscontainer">
+
+        <div>
+          <p class="education">Tools</p>
+          <div id="line"></div>
+        </div>
+
+
+        <div class="simplecontainer">
+
+          <div class="scrollmenu">
+            <img src="./image/Figma-b.png" alt="">
+            <img src="./image/sketch-b.png" alt="">
+            <img src="./image/XD-b.png" alt="">
+            <img src="./image/Balsamiq-b.png" alt="">
+            <img src="./image/Workflowy-b.png" alt="">
+            <img src="./image/moqups-b.png" alt="">
+            <img src="./image/Photoshop-b.png" alt="">
+            <img src="./image/Illustration-b.png" alt="">
+
+          </div>
+
+        </div>
+
+      
+      </div>
+
+      <!-- Tools Section Ends here -->
+
+
+
+      <!-- work Section starts here -->
+
+      <div class="container-fluid workcontainer">
+
+        <div>
+          <p class="education" >My Works</p>
+          <div id="line"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-8">
+            <img class="workdiv" src="./image/Tumbnails/Krafty Kitchen.png" alt="" style="width:100%; margin-top:50px;" data-toggle="modal" data-target=".Kitchenweb">
+            
+            <div class="modal fade Kitchenweb" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="./image/Large design/Kitchen.png" alt="" style="width:100%">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-4">
+            <img class="workdiv" src="./image/Tumbnails/Krafty Kitchen Onboarding.png" alt="" style="height:95%; margin-left:24px;" data-toggle="modal" data-target=".Kitchenmob">
+
+            <div class="modal fade Kitchenmob" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="./image/Large design/Mobile-large.png" alt="" style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+
+        <div class="row p-4">
+          <div class="col-6 col-md-4">
+            <div class="row p-4">
+
+              <img class="workdiv" src="./image/Tumbnails/Deer Illustration.png" alt="" style="width:100%;" data-toggle="modal" data-target=".DeerAI">
+
+              <div class="modal fade DeerAI" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <img src="./image/Large design/Deer-L.png" alt="" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row p-4">
+
+              <img class="workdiv" src="./image/Tumbnails/Bulb.png" alt="" style="width:100%;" data-toggle="modal" data-target=".BulbAI">
+
+              <div class="modal fade BulbAI" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <img src="./image/Large design/Bulb-L.png" alt="" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+
+
+          <div class="col-6 col-md-4 p-4" >
+            <img class="workdiv" src="./image/Tumbnails/Zero Pixels Mobile.png" alt="" style="height:100%;" data-toggle="modal" data-target=".Pixelmob">
+
+            <div class="modal fade Pixelmob" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="./image/Large design/Zero-Mobile.png" alt="" style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-6 col-md-4 p-4">
+            <img class="workdiv" src="./image/Tumbnails/Calendar App Landing Page.png" alt="" style="height:100%;" data-toggle="modal" data-target=".Calendarmob">
+
+            <div class="modal fade Calendarmob" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="./image/Large design/Calendar-large.png" alt="" style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-6">
+            <img class="workdiv" src="./image/Tumbnails/Zero Pixels.png" alt="" style="width:100%;" data-toggle="modal" data-target=".Pixelweb">
+
+            <div class="modal fade Pixelweb" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="./image/Large design/Zero-Web.png" alt="" style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <img class="workdiv" src="./image/Tumbnails/Vacation Planneer.png" alt="" style="width:100%;" data-toggle="modal" data-target=".Tripmob">
+
+            <div class="modal fade Tripmob" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="./image/Large design/Trip-large.png" alt="" style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+
+         <div class="row p-4">
+          <div class="col-8 col-md-8">
+
+              <img class="workdiv" src="./image/Tumbnails/Say no to supplements.png" alt="" style="width:100%;" data-toggle="modal" data-target=".Workoutweb">
+
+              <div class="modal fade Workoutweb" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <img src="./image/Large design/Healtify large.png" alt="" style="width:100%">
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+
+
+          <div class="col-4 col-md-4 p-4" >
+            <img class="workdiv" src="./image/Tumbnails/Tree.png" alt="" style="width:100%;" data-toggle="modal" data-target=".Treeai">
+
+            <div class="modal fade Treeai" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="./image/Large design/Tree-large.png" alt="" style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+
+        <div class="row p-4">
+        <div class="col-5 col-md-5 pt-4">
+
+            <img class="workdiv" src="./image/Tumbnails/Work Mode Illustration.png" alt="" style="width:100%;" data-toggle="modal" data-target=".Workai">
+
+            <div class="modal fade Workai" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="./image/Large design/Work Mode AI.png" alt="" style="width:100%">
+                </div>
+              </div>
+            </div>
+          
+        </div>
+
+
+        <div class="col-7 col-md-7" >
+          <img class="workdiv" src="./image/Tumbnails/Workout Illustration.png" alt="" style="width:100%;" data-toggle="modal" data-target=".Workoutai">
+
+          <div class="modal fade Workoutai" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="./image/Large design/Workout AI.png" alt="" style="width:100%">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      </div>
+
+      <!-- work Section Ends here -->
 
     <!-- AOS Plugin -->
 
@@ -304,6 +630,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+ 
   
 </body>
 </html>

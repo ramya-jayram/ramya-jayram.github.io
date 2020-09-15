@@ -19,6 +19,9 @@ html {
       overflow-x: hidden;
   }
 
+  a{
+      text-decoration: none !important;
+  }
 /* make scrollbar transparent */
 
 ::-webkit-scrollbar {
@@ -126,7 +129,6 @@ nav a :hover{
   .smicons:hover {
     transform: scale(1.3);
   }
-
 
 /* Caret - down */
 
@@ -289,11 +291,110 @@ nav a :hover{
     line-height: 18px;
 }
 
-
-/* skillssection CSS */
+/* Skills Section  */
 
 .skillssection{
-    padding-top: 5%;
-    height: 10vh;
-    background-color: #fcfcfc;
+    width: 100%;
+    background: #f9f9fA;  
+    margin-top: 5%; 
+    padding-bottom: 4%;
+
 }
+
+.Skillscontainer{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.designskillstitle{
+    padding-top: 10%;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #209AB6;
+    line-height: 32px;
+    margin-bottom: 4px;
+}
+
+.progress{
+    height: 24px !important;
+    border-radius: 50px !important;
+    width: 90%;
+  }
+  
+  .percent{
+    font-weight: 500;
+    text-align: right !important;
+    padding-right: 5%;
+    border-radius: 50px;
+    background-color: #126AFB !important;
+  }
+  
+  .skills{
+    padding: 2% 0%;
+    padding-left: 3%;
+  }
+  .skills p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+    padding-bottom: 2%;
+  }
+  
+.percent-tech{
+    background-color: #1cab5d !important;
+}
+
+.toolscontainer{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.workcontainer{
+    padding-left: 8%;
+    padding-right: 8%;
+    background: #f9f9fA;  
+    margin-top: 5%; 
+    padding-bottom: 4%;
+}
+
+div.scrollmenu {
+    /* background-color: #333; */
+    overflow: auto;
+    padding: 10px;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0px 200px;
+    text-decoration: none;
+  }
+
+  div.scrollmenu img{
+      width: auto;
+      height: 120px;
+      padding-right: 60px;
+  }
+
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+  .workdiv{
+    box-shadow: 5px 10px 18px #DFE1e6;
+    transition: transform .2s;
+  }
+
+  .workdiv:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+
+  .modal-lg{
+      max-width: 1000px !important;
+  }
