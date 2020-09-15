@@ -54,6 +54,11 @@ nav a :hover{
     width: 32px;
 }
 
+/* Modechange is hidded here */
+#modechange{
+    visibility: hidden;
+}
+
 /* Home page */
 
 .textcontainer{
