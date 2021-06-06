@@ -323,7 +323,7 @@ nav a :hover{
 }
 
 .progress{
-    height: 20px !important;
+    height: 10px !important;
     border-radius: 50px !important;
     width: 90%;
   }
