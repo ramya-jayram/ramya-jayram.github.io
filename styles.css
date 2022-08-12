@@ -1,0 +1,569 @@
+html {
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Space Mono", monospace;
+  color: #0d2f3f;
+  background-color: #ffffff;
+  padding-top: 60px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.portfolioBody::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.portfolioBody {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+/* transparent scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
+}
+.dark-mode {
+  color: #ffffff;
+  background-color: #000000;
+}
+.dark-mode .li-dot {
+  border: 1px dashed #fff;
+}
+.dark-mode .left-line {
+  border: 1px dashed #fff;
+}
+nav{
+  width: 100vh !important;
+}
+.about-ramya{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.rj-logo{
+  margin-left: auto;
+}
+.IntroSection-banner{
+  position: relative;
+  min-height: 100vh;
+}
+.name-banner{
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.main-container{
+  position: absolute !important;
+  top: 0px;
+}
+.IntroSection p {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.06tem;
+  color: #222222;
+}
+.dark-mode .IntroSection p {
+  color: #fff;
+}
+.heyIntrotext {
+  font-family: "Space Mono" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px !important;
+  line-height: 28px;
+  letter-spacing: -0.06tem;
+}
+.ramyaNameImg {
+  width: 500px;
+  height: auto;
+}
+.whatIDo {
+  font-family: "Space Mono" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px !important;
+}
+.dark-mode-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+h1 {
+  font-family: fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fcb26d;
+}
+h1 div {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fcb26d;
+}
+.workNEducationSection ul {
+  list-style: none;
+  font-size: 1rem;
+}
+.workNEducationSection ul li {
+  position: relative;
+  padding-left: 2rem;
+}
+.li-dot {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: 5px;
+  left: -15px;
+  border: 1px dashed #000;
+}
+.li-dot div {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+}
+.left-line {
+  width: 2px;
+  height: 88%;
+  position: absolute;
+  top: 26px;
+  left: -6px;
+  /* border: 1px dashed #0d2f3f; */
+  background: url("assets/images/dashedBorder.svg");
+}
+.purple-dot {
+  background: #cc74aa;
+}
+.red-dot {
+  background: #fb2f6b;
+}
+.yellow-dot {
+  background: #ffb863;
+}
+.pink-dot {
+  background: #fc5668;
+}
+.companyName {
+  font-family: Fira sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  display: inline-block;
+}
+.duration {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+.designation {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+}
+.location {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
+.location-icon {
+  width: 8px;
+  vertical-align: bottom;
+}
+.toolscardhld {
+  border: 1px solid #efefef !important;
+  border-radius: 4px;
+  padding: 10px 16px 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toolscardhld:hover{
+  border: 1px solid #fcb26d !important;
+  background-color: transparent !important;
+}
+
+.toolscardhld .toolsTilte {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.toolscardhld .toolsDesc {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+}
+.certificationHld {
+  border-right: 1px solid #fcb26d;
+}
+.certificationTitle {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.certificationTitle:hover {
+  color: #FCB26D !important;
+}
+.dark-mode .certificationHld div svg {
+  filter: brightness(0) invert(1);
+}
+
+.dark-mode .certificationTitle:hover {
+  color: #FCB26D !important;
+}
+.certificationFrom {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+.languageList li {
+  list-style: none;
+  display: inline;
+  font-weight: 400;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.languageList li:after {
+  content: "/";
+  padding: 0;
+  margin: 0 5px 0 10px;
+  vertical-align: middle;
+  font-size: larger;
+  line-height: 0;
+  color: gray;
+}
+.languageList li:last-child:after {
+  content: none;
+}
+.design-thumbnail {
+  /*border-radius: 10px; */
+  position: relative;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.design-grid {
+  position: relative;
+}
+.designlink-icon {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.design-grid:hover .design-thumbnail {
+  filter: brightness(50%);
+}
+.design-grid:hover .designlink-icon {
+  opacity: 1;
+}
+.design-link {
+  height: 48px;
+  width: 48px;
+}
+.DesignTabs .nav-tabs {
+  border-bottom: none;
+}
+.DesignTabs .nav-tabs .nav-link {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #222222;
+  padding: 5px 0;
+  border: none;
+}
+.dark-mode .DesignTabs .nav-tabs .nav-link {
+  color: #ffffff;
+}
+.DesignTabs .nav-tabs .nav-link:focus-visible {
+  outline: none;
+}
+.DesignTabs .nav-tabs .nav-item:focus-visible {
+  outline: none;
+}
+.DesignTabs .nav-tabs .nav-item {
+  outline: none;
+}
+.DesignTabs .nav-tabs .nav-item.show .nav-link,
+.DesignTabs .nav-tabs .nav-link.active {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fcb26d;
+  border: none;
+  border-bottom: 1px solid #fcb26d;
+  padding: 5px 0;
+  background-color: transparent;
+}
+.DesignTabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fcb26d;
+  border: none;
+  border-bottom: 1px solid #fcb26d !important;
+  padding: 5px 0;
+}
+.DesignTabs .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border: none;
+}
+.resumeSec .desc {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #222222;
+  font-size: 16px;
+}
+.dark-mode .resumeSec .desc {
+  color: #ffffff;
+}
+.dark-mode .location-icon {
+  filter: invert(100%) sepia(1%) saturate(26%) hue-rotate(297deg)
+    brightness(102%) contrast(97%);
+}
+.resumeSec .button {
+  color: #fff;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background: #222222;
+  border-radius: 4px;
+  padding: 12px 30px;
+  text-decoration: none;
+}
+.resumeSec .button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.download-icon {
+  vertical-align: initial;
+}
+.hambergermenu-icon {
+    position: fixed;
+    bottom: 50%;
+    right: 0;
+    cursor: pointer;
+}
+.sideMenuHld {
+  position: fixed;
+  bottom: 32%;
+  right: 10px;
+  cursor: pointer;
+  visibility: none;
+  display: none;
+}
+
+.sidemenu-icon{
+  fill: #0D2F3F;
+  height: 14px;
+  width: 14px;
+}
+.sidemenu-icon:hover path {
+  fill: #FCB26D !important;
+}
+.sideMenuHld div {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+}
+.sideMenuHld div svg{
+  width: 14px;
+  height: 14px;
+  margin: 16px 0 16px 0;
+}
+.dark-mode .hambergermenu-icon {
+  filter: brightness(0) invert(1);
+}
+.dark-mode .sideMenuHld div img {
+  filter: brightness(0) invert(1);
+}
+.dark-mode .sideMenuHld div svg path{
+  fill: #ffffff !important;
+}
+.dark-mode .sideMenuHld div svg path:hover{
+  fill: #fcb26d !important;
+}
+@media only screen and (min-width: 2560px) {
+  
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .DesignTabs .tab-content img {
+    width: 100%
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  .rj-logo{
+    margin-left: 0px !important;
+  }
+  .dark-mode-icon{
+    bottom: unset !important;
+    top: 0px !important;
+    z-index: 9999;
+  }
+  .DesignTabs .tab-content img {
+    width: 100%
+  }
+  .heyIntrotext {
+    padding-top: 24px;
+    font-family: "Space Mono" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+  }
+  .ramyaNameImg {
+    width: 400px;
+    height: auto;
+  }
+  .whatIDo {
+    font-family: "Space Mono" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+  }
+  .aboutme {
+    font-family: "Fira Sans" !important;
+    font-size: 15px !important;
+    line-height: 20px;
+    letter-spacing: 0.05tem;
+    color: #222222;
+  }
+  .aboutimage {
+    padding-bottom: 20px;
+  }
+  .certificationHld {
+    border-right: none;
+    margin-top: 0%;
+    margin-right: 0%;
+  }
+  .ps-5 {
+    margin-left: -35px !important;
+  }
+  .companyName {
+    font-family: Fira sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+  }
+  .duration {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+  }
+  .designation {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .location {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  .DesignTabs .mobTabsview {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hambergermenu-icon {
+    display: none !important;
+  }
+  .sideMenuHld {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .DesignTabs .mobTabsview {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .heyIntrotext {
+    padding-top: 24px;
+    font-family: "Space Mono" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+  }
+  .ramyaNameImg {
+    width: 400px;
+    height: auto;
+  }
+  .whatIDo {
+    font-family: "Space Mono" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+  }
+  .aboutme {
+    font-family: "Fira Sans" !important;
+    font-size: 15px !important;
+    line-height: 20px;
+    letter-spacing: 0.05tem;
+    color: #222222;
+  }
+  .aboutimage {
+    padding-bottom: 20px;
+  }
+  .certificationHld {
+    border-right: none;
+    margin-top: 0%;
+    margin-right: 0%;
+  }
+  .ps-5 {
+    margin-left: -35px !important;
+  }
+
+}

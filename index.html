@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <meta charset="utf-8" /> -->
+    <link rel="icon" href="favicon.png" />
+    <title>Ramya Jayaram&apos;s portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <body onload="hideMenu()">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top w-100">
+      <div class="container-fluid">
+        <img
+          src="assets/images/logo.svg"
+          alt="logo"
+          class="img-fluid p-2 rj-logo"
+        />
+      </div>
+    </nav>
+    <div class="container-fluid main-container">
+      <!-- Banner Section -->
+      <section id="IntroSection" class="IntroSection-banner" onmouseover="hideMenu()">
+        <div class="container name-banner">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-12 text-center">
+              <img
+                src="assets/images/banner.svg"
+                alt="banner"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <p class="heyIntrotext">Hey There, I’m</p>
+              <img
+                src="assets/images/ramya.svg"
+                alt="ramya"
+                class="img-fluid ramyaNameImg mb-3"
+              />
+              <p class="whatIDo col-lg-8">
+                I design beautiful simple things, And I love what i do.
+              </p>
+              <div class="d-flex col-lg-6 mt-4">
+                <a href="https://www.behance.net/ramyajayaram"target="_blank">
+                  <img
+                  src="assets/images/behance-icon.svg"
+                  alt="ramya"
+                  class="img-fluid me-4"
+                  />
+                </a>
+                <a href="https://dribbble.com/RamyaJayaram"target="_blank">
+                  <img
+                  src="assets/images/dribble-icon.svg"
+                  alt="ramya"
+                  class="img-fluid me-4"
+                />
+                </a>
+                <a href="https://www.linkedin.com/in/ramya-jayaram/"target="_blank">
+                  <img
+                  src="assets/images/linkedin-icon.svg"
+                  alt="ramya"
+                  class="img-fluid me-4"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About me section -->
+      <section id="Aboutme" class="IntroSection mb-5 py-5" onmouseover="hideMenu()">
+        <div class="container">
+          <div
+            class="heading d-flex align-items-baseline offset-lg-1 ps-2 mb-4"
+          >
+            <img
+              src="assets/images/about-me-icon.svg"
+              alt="aboutme"
+              class="img-fluid me-2"
+            />
+            <h1>
+              ABOUT ME
+              <div class=""></div>
+            </h1>
+          </div>
+          <div class="row align-items-center about-ramya">
+            <div class="col-lg-3 offset-lg-1 col-md-4 col-12" data-aos="slide-right" data-aos-duration="1000"> 
+             <!-- <div class="col-lg-3 offset-lg-1 col-md-4 col-12"> -->
+              <img
+                src="assets/images/ramya-pic.svg"
+                alt="my-pic"
+                class="img-fluid aboutimage"
+              />
+            </div>
+            <div class="col-lg-7 col-md-8 col-12" data-aos="slide-left" data-aos-duration="1000">
+             <!-- <div class="col-lg-7 col-md-8 col-12"> -->
+              <p class="aboutme">
+                I&apos;m Ramya J, and as you might have already read, I&apos;m a designer.
+                I created this website so I could showcase all this and through
+                the process.
+              </p>
+              <p class="aboutme">
+                As a user experience designer, it&apos;s my mission to create an
+                intuitive and delightful user experience in every step of the
+                user’s journey. By constantly challenging myself in my design
+                work, I keep up-to-date with new skills and technologies in
+                interface design
+              </p>
+              <p class="aboutme"> 
+                As a user interaction designer, I focus on the moment when a
+                user interacts with a product and their goal are to improve the
+                interactive experience.
+              </p>
+              <p class="aboutme">I am enthusiastic about design, from macro to micro-scale.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Work and Education Section -->
+      <section id="workNEducationSection" class="workNEducationSection pb-5" onmouseover="hideMenu()">
+        <div class="container">
+          <div class="col-lg-10 offset-lg-1 col-12 col-md-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="heading d-flex align-items-baseline mb-4">
+                  <img
+                    src="assets/images/work-icon.svg"
+                    alt="aboutme"
+                    class="img-fluid me-2"
+                  />
+                  <h1>
+                    WORK
+                    <div class=""></div>
+                  </h1>
+                </div>
+                <ul class="">
+                  <li class="position-relative" >
+                    <div class="py-3" data-aos="fade-up" data-aos-duration="1500">
+                      <img
+                        src="assets/images/appiness.svg"
+                        alt="appiness"
+                        class="img-fluid d-block mb-2"
+                      />
+                      <p class="companyName mb-2">
+                        Appiness Interactive Pvt. Ltd.
+                      </p>
+                      <span class="duration">( Jun ‘21 - Present )</span>
+                      <p class="designation">Ace - UI/UX Designer</p>
+                      <p class="location">
+                        <img
+                          src="assets/images/location-icon.svg"
+                          alt="location"
+                          id="location"
+                          class="img-fluid me-2 location-icon"
+                        />Bengaluru, India
+                      </p>
+                    </div>
+                    <div class="li-dot" data-aos="fade-up" data-aos-duration="1500"><div class="purple-dot"></div></div>
+                    <div class="left-line"></div>
+                  </li>
+                  <li>
+                    <div class="py-3" data-aos="fade-up" data-aos-duration="1500">
+                      <img
+                        src="assets/images/vTiger.svg"
+                        alt="vTiger"
+                        class="img-fluid d-block mb-2"
+                      />
+                      <p class="companyName mb-2">
+                        Vtiger Systems India Pvt. Ltd.
+                      </p>
+                      <span class="duration">( Jun ‘19 - Jun ‘21 )</span>
+                      <p class="designation">UI/UX Engineer</p>
+                      <p class="location">
+                        <img
+                          src="assets/images/location-icon.svg"
+                          alt="location"
+                          id="location"
+                          class="img-fluid me-2 location-icon"
+                        />Bengaluru, India
+                      </p>
+                    </div>
+                    <div class="li-dot" data-aos="fade-up" data-aos-duration="1500"><div class="red-dot"></div></div>
+                    <div class="left-line"></div>
+                  </li>
+                  <li>
+                    <div class="py-3" data-aos="fade-up" data-aos-duration="1500">
+                      <img
+                        src="assets/images/vTiger.svg"
+                        alt="vTiger"
+                        class="img-fluid d-block mb-1"
+                      />
+                      <p class="companyName mb-2">
+                        Vtiger Systems India Pvt. Ltd.
+                      </p>
+                      <span class="duration">( Oct ‘18 - Apr ‘19 )</span>
+                      <p class="designation">UI/UX Engineer</p>
+                      <p class="location">
+                        <img
+                          src="assets/images/location-icon.svg"
+                          alt="location"
+                          id="location"
+                          class="img-fluid me-2 location-icon"
+                        />Bengaluru, India
+                      </p>
+                    </div>
+                    <div class="li-dot" data-aos="fade-up" data-aos-duration="1500"><div class="yellow-dot"></div></div>
+                    <div class="left-line"></div>
+                  </li>
+                  <li>
+                    <div class="py-3" data-aos="fade-up" data-aos-duration="1500">
+                      <img
+                        src="assets/images/infiData.svg"
+                        alt="infiData"
+                        class="img-fluid d-block mb-1"
+                      />
+                      <p class="companyName mb-2 me-2">Infidata Technologies</p>
+                      <span class="duration">( July ‘18 - Aug ‘18 )</span>
+                      <p class="designation">Web design and Development</p>
+                      <p class="location">
+                        <img
+                          src="assets/images/location-icon.svg"
+                          alt="location"
+                          id="location"
+                          class="img-fluid me-2 location-icon"
+                        />Bengaluru, India
+                      </p>
+                    </div>
+                    <div class="li-dot" data-aos="fade-up" data-aos-duration="1500"><div class="pink-dot"></div></div>
+                    <div class="left-line"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="heading d-flex align-items-baseline mb-4">
+                  <img
+                    src="assets/images/education-icon.svg"
+                    alt="aboutme"
+                    class="img-fluid me-2"
+                  />
+                  <h1>
+                    EDUCATION
+                    <div class=""></div>
+                  </h1>
+                </div>
+                <ul class="">
+                  <li class="position-relative">
+                    <div class="py-3" data-aos="fade-up" data-aos-duration="1500">
+                      <img
+                        src="assets/images/GAT.svg"
+                        alt="appiness"
+                        class="img-fluid d-block mb-2"
+                      />
+                      <p class="companyName mb-2">
+                        Global Academy of Technology
+                      </p>
+                      <p class="designation">
+                        Bachelor&apos;s Degree in Computer Science & Engineering
+                      </p>
+                      <p class="location">(2016 - 2019)</p>
+                    </div>
+                    <div class="li-dot" data-aos="fade-up" data-aos-duration="1500"><div class="purple-dot"></div></div>
+                    <div class="left-line"></div>
+                  </li>
+                  <li>
+                    <div class="py-3" data-aos="fade-up" data-aos-duration="1500">
+                      <img
+                        src="assets/images/DSIT.svg"
+                        alt="vTiger"
+                        class="img-fluid d-block mb-2"
+                      />
+                      <p class="companyName mb-2">
+                        Dayananda Sagar Institute of Technology
+                      </p>
+                      <p class="designation">
+                        Diploma in Computer Science & Engineering
+                      </p>
+                      <p class="location">(2011 - 2015)</p>
+                    </div>
+                    <div class="li-dot" data-aos="fade-up" data-aos-duration="1500"><div class="red-dot"></div></div>
+                    <div class="left-line"></div>
+                  </li>
+                  <li>
+                    <div class="py-3" data-aos="fade-up" data-aos-duration="1500">
+                      <img
+                        src="assets/images/BET-convent.svg"
+                        alt="vTiger"
+                        class="img-fluid d-block mb-1"
+                      />
+                      <p class="companyName mb-2">BET Convent</p>
+                      <p class="designation">High School</p>
+                      <p class="location">(2007 - 2010)</p>
+                    </div>
+                    <div class="li-dot" data-aos="fade-up" data-aos-duration="1500"><div class="yellow-dot"></div></div>
+                    <div class="left-line"></div>
+                  </li>
+                  <li>
+                    <div class="py-3" data-aos="fade-up" data-aos-duration="1500">
+                      <img
+                        src="assets/images/rotary-school.svg"
+                        alt="infiData"
+                        class="img-fluid d-block mb-1"
+                      />
+                      <p class="companyName mb-2">Rotary School</p>
+                      <p class="designation">Elementary & Primary School</p>
+                      <p class="location">(1999 - 2007)</p>
+                    </div>
+                    <div class="li-dot" data-aos="fade-up" data-aos-duration="1500"><div class="pink-dot"></div></div>
+                    <div class="left-line"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tools Section -->
+      <section id="toolSection" class="my-5" onmouseover="hideMenu()">
+        <div class="container">
+          <div class="col-lg-10 offset-lg-1 col-12 col-md-12">
+            <div class="heading d-flex align-items-baseline mb-4">
+              <img
+                src="assets/images/tools.svg"
+                alt="aboutme"
+                class="img-fluid me-2"
+              />
+              <h1>
+                TOOLS
+                <div class=""></div>
+              </h1>
+            </div>
+            <div class="ps-3">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="toolscardhld ">
+                    <img
+                      src="assets/images/figma.svg"
+                      alt="figma"
+                      class="img-fluid me-3"
+                    />
+                    <div>
+                      <p class="toolsTilte">Figma</p>
+                      <p class="toolsDesc">Mockups / Prototype</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="toolscardhld ">
+                    <img
+                      src="assets/images/sketch.svg"
+                      alt="sketch"
+                      class="img-fluid me-3"
+                    />
+                    <div>
+                      <p class="toolsTilte">Sketch</p>
+                      <p class="toolsDesc">Mockups / Prototype</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="toolscardhld ">
+                    <img
+                      src="assets/images/adobeXd.svg"
+                      alt="adobeXd"
+                      class="img-fluid me-3"
+                    />
+                    <div>
+                      <p class="toolsTilte">Adobe XD</p>
+                      <p class="toolsDesc">Mockups / Prototype</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="toolscardhld ">
+                    <img
+                      src="assets/images/marvel.svg"
+                      alt="marvel"
+                      class="img-fluid me-3"
+                    />
+                    <div>
+                      <p class="toolsTilte">Marvel</p>
+                      <p class="toolsDesc">
+                        Prototype / Handoff
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="toolscardhld ">
+                    <img
+                      src="assets/images/balsamig.svg"
+                      alt="balsamig"
+                      class="img-fluid me-3"
+                    />
+                    <div>
+                      <p class="toolsTilte">Balsamiq</p>
+                      <p class="toolsDesc">Wireframes</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="toolscardhld ">
+                    <img
+                      src="assets/images/moqups.svg"
+                      alt="moqups"
+                      class="img-fluid me-3"
+                    />
+                    <div>
+                      <p class="toolsTilte">Moqups</p>
+                      <p class="toolsDesc">Wireframes / Flow Charts</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="toolscardhld ">
+                    <img
+                      src="assets/images/zeplin.svg"
+                      alt="zeplin"
+                      class="img-fluid me-3"
+                    />
+                    <div>
+                      <p class="toolsTilte">Zeplin</p>
+                      <p class="toolsDesc">Design Handoff</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="toolscardhld ">
+                    <img
+                      src="assets/images/photoshop.svg"
+                      alt="photoshop"
+                      class="img-fluid me-3 "
+                    />
+                    <div>
+                      <p class="toolsTilte">Adobe Photoshop</p>
+                      <p class="toolsDesc">
+                        Illustration / Icons
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="toolscardhld ">
+                    <img
+                      src="assets/images/illustrator.svg"
+                      alt="illustrator"
+                      class="img-fluid me-3"
+                    />
+                    <div>
+                      <p class="toolsTilte">Adobe Illustrator</p>
+                      <p class="toolsDesc">Illustration / Icons</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Certificate Section -->
+      <section id="certificateSection" class="mb-5" onmouseover="hideMenu()">
+        <div class="container">
+          <div class="col-lg-10 offset-lg-1 col-12 col-md-12">
+            <div class="heading d-flex align-items-baseline mb-4">
+              <img
+                src="assets/images/certificate-icon.svg"
+                alt="aboutme"
+                class="img-fluid me-2 chevron"
+              />
+              <h1>
+                CERTIFICATION
+                <div class=""></div>
+              </h1>
+            </div>
+            <div class="ps-3">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 certificationHld">
+                  <p class="certificationTitle">
+                    <img
+                      src="assets/images/right-arrow.svg"
+                      alt="points"
+                      class="img-fluid me-2 icon"
+                    />      
+                    UX Fundations : Interaction Design
+                  </p>
+                  <p class="certificationFrom ms-3">LinkedIn</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 certificationHld ps-5">
+                  <p class="certificationTitle">
+                    <img
+                      src="assets/images/right-arrow.svg"
+                      alt="points"
+                      class="img-fluid me-2"
+                    />
+                    Practical UX Weekly : Season One
+                  </p>
+                  <p class="certificationFrom ms-3">LinkedIn</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ps-5">
+                  <p class="certificationTitle">
+                    <img
+                      src="assets/images/right-arrow.svg"
+                      alt="points"
+                      class="img-fluid me-2"
+                    />
+                    UX Design : Creating Personas
+                  </p>
+                  <p class="certificationFrom ms-3">LinkedIn</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Language Section -->
+      <section id="languageSection" class="mb-5" onmouseover="hideMenu()">
+        <div class="container">
+          <div class="col-lg-10 offset-lg-1 col-12 col-md-12">
+            <div class="heading d-flex align-items-baseline mb-4">
+              <img
+                src="assets/images/language-icon.svg"
+                alt="aboutme"
+                class="img-fluid me-2"
+              />
+              <h1>
+                LANGUAGES
+                <div class=""></div>
+              </h1>
+            </div>
+            <ul class="languageList ps-3 p-0">
+              <li>English</li>
+              <li>Kannada</li>
+              <li>Hindi</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Designs Section -->
+      <section
+        id="DesignSection"
+        class="mb-5 DesignTabs"
+        onmouseover="hideMenu()"
+      >
+        <div class="container">
+          <div class="col-lg-10 offset-lg-1 col-12 col-md-12">
+            <div class="heading d-flex align-items-baseline mb-4">
+              <img
+                src="assets/images/designIcon.svg"
+                alt="aboutme"
+                class="img-fluid me-2"
+              />
+              <h1>
+                DESIGNS
+                <div class=""></div>
+              </h1>
+            </div>
+            <ul class="nav nav-tabs ps-3" role="tablist">
+              <li class="nav-item me-3">
+                <a class="nav-link active" data-bs-toggle="tab" href="#all"
+                  >All</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" data-bs-toggle="tab" href="#web">Web</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" data-bs-toggle="tab" href="#mobile"
+                  >Mobile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#illustrations"
+                  >Illustrations</a
+                >
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="all" class="container tab-pane active">
+                  <br />
+
+
+                  <div class="row row-cols-lg-5 row-cols-md-5 mobTabsview">
+                    
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/95244125/Trip-Planner" target="_blank">
+                        <img
+                        src="assets/images/VactionPlanner.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/125162299/Secure-Pass-A-password-Manager" target="_blank">
+                        <img
+                        src="assets/images/SecurePass.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/91645973/Deer-in-moon-light" target="_blank">
+                        <img
+                        src="assets/images/deer.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/104262159/Restaurant-Landing-Page" target="_blank">
+                        <img
+                        src="assets/images/Resturantwebsite.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/104267269/Restaurant-Mobile-App-On-boarding" target="_blank">
+                        <img
+                        src="assets/images/ResturantMobile.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                        <div>
+                          <a href="https://www.behance.net/gallery/117403825/Modular-Plantation-An-app-to-track-your-indoor-plants" target="_blank">
+                          <img
+                          src="assets/images/Modular_plantation.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                          />
+                          <div class="designlink-icon">
+                            <img src="./assets/images/link.png" alt="" class="design-link">
+                          </div>
+                          </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/104306921/Design-Studio-Website" target="_blank">
+                        <img
+                        src="assets/images/ZeroPixel_web.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/96143065/Work-Out" target="_blank">
+                        <img
+                        src="assets/images/Workout.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.figma.com/proto/KL9z6Cr4Bl8DE702Fyxodt/OTT-Mobile-app?page-id=202%3A14&node-id=204%3A774&viewport=1012%2C-1638%2C0.23&scaling=min-zoom&starting-point-node-id=202%3A199" target="_blank">
+                        <img
+                        src="assets/images/Ott-app.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/150012347/Quizo" target="_blank">
+                        <img
+                        src="assets/images/Quizo.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/104307543/Work-Mode-ON" target="_blank">
+                        <img
+                        src="assets/images/Office.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.figma.com/proto/DxXRoEwolbEbwjcRoyGz6O/Vehicle-service?page-id=501%3A2&node-id=502%3A3&viewport=512%2C749%2C0.23&scaling=min-zoom" target="_blank">
+                        <img
+                          src="assets/images/VespaService.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <a href="https://www.behance.net/gallery/133753583/HOLO-Travel-across-Island" target="_blank">
+                        <img
+                        src="assets/images/Holo.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div id="web" class="container tab-pane fade">
+                  <br />
+                  <div class="row row-cols-lg-5 row-cols-md-5 mobTabsview">
+                    <div class="col-lg col-md col-6 design-grid">
+                        <div>
+                          <img
+                          src="assets/images/Modular_plantation.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                          />
+                          <div class="designlink-icon">
+                            <img src="./assets/images/link.png" alt="" class="design-link">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <img
+                        src="assets/images/VactionPlanner.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <img
+                        src="assets/images/SecurePass.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <img
+                        src="assets/images/Holo.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <img
+                        src="assets/images/Resturantwebsite.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+  
+                <div id="mobile" class="container tab-pane fade">
+                <br />
+                  <div class="d-flex justify-content-between mobTabsview">
+                    <div class="row row-cols-lg-5 row-cols-md-5 mobTabsview">
+                      <div class="col-lg col-md col-6 design-grid">
+                          <div>
+                            <img
+                            src="assets/images/Modular_plantation.png"
+                            alt="holo"
+                            class="img-fluid mb-5 design-thumbnail"
+                            />
+                            <div class="designlink-icon">
+                              <img src="./assets/images/link.png" alt="" class="design-link">
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg col-md col-6 design-grid">
+                        <div>
+                          <img
+                          src="assets/images/VactionPlanner.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                          />
+                          <div class="designlink-icon">
+                            <img src="./assets/images/link.png" alt="" class="design-link">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg col-md col-6 design-grid">
+                        <div>
+                          <img
+                          src="assets/images/SecurePass.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                          />
+                          <div class="designlink-icon">
+                            <img src="./assets/images/link.png" alt="" class="design-link">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg col-md col-6 design-grid">
+                          <div>
+                            <img
+                            src="assets/images/Modular_plantation.png"
+                            alt="holo"
+                            class="img-fluid mb-5 design-thumbnail"
+                            />
+                            <div class="designlink-icon">
+                              <img src="./assets/images/link.png" alt="" class="design-link">
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg col-md col-6 design-grid">
+                        <div>
+                          <img
+                          src="assets/images/VactionPlanner.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                          />
+                          <div class="designlink-icon">
+                            <img src="./assets/images/link.png" alt="" class="design-link">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg col-md col-6 design-grid">
+                        <div>
+                          <img
+                          src="assets/images/SecurePass.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                          />
+                          <div class="designlink-icon">
+                            <img src="./assets/images/link.png" alt="" class="design-link">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg col-md col-6 design-grid">
+                        <div>
+                          <img
+                          src="assets/images/Holo.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                          />
+                          <div class="designlink-icon">
+                            <img src="./assets/images/link.png" alt="" class="design-link">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg col-md col-6 design-grid">
+                        <div>
+                          <img
+                          src="assets/images/Holo.png"
+                          alt="holo"
+                          class="img-fluid mb-5 design-thumbnail"
+                          />
+                          <div class="designlink-icon">
+                            <img src="./assets/images/link.png" alt="" class="design-link">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+
+              <div id="illustrations" class="container tab-pane fade">
+                <br />
+                <div class="row row-cols-lg-5 row-cols-md-5 mobTabsview">
+                  <div class="col-lg col-md col-6 design-grid">
+                      <div>
+                        <img
+                        src="assets/images/Treeswing.png"
+                        alt="holo"
+                        class="img-fluid mb-5 design-thumbnail"
+                        />
+                        <div class="designlink-icon">
+                          <img src="./assets/images/link.png" alt="" class="design-link">
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg col-md col-6 design-grid">
+                    <div>
+                      <img
+                      src="assets/images/Workout.png"
+                      alt="holo"
+                      class="img-fluid mb-5 design-thumbnail"
+                      />
+                      <div class="designlink-icon">
+                        <img src="./assets/images/link.png" alt="" class="design-link">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg col-md col-6 design-grid">
+                    <div>
+                      <img
+                      src="assets/images/deer.png"
+                      alt="holo"
+                      class="img-fluid mb-5 design-thumbnail"
+                      />
+                      <div class="designlink-icon">
+                        <img src="./assets/images/link.png" alt="" class="design-link">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg col-md col-6 design-grid">
+                    <div>
+                      <img
+                      src="assets/images/Office.png"
+                      alt="holo"
+                      class="img-fluid mb-5 design-thumbnail"
+                      />
+                      <div class="designlink-icon">
+                        <img src="./assets/images/link.png" alt="" class="design-link">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg col-md col-6 design-grid">
+                    <div>
+                      <img
+                      src="assets/images/Ginie.png"
+                      alt="holo"
+                      class="img-fluid mb-5 design-thumbnail"
+                      />
+                      <div class="designlink-icon">
+                        <img src="./assets/images/link.png" alt="" class="design-link">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg col-md col-6 design-grid">
+                    <div>
+                      <img
+                      src="assets/images/Bulb.png"
+                      alt="holo"
+                      class="img-fluid mb-5 design-thumbnail"
+                      />
+                      <div class="designlink-icon">
+                        <img src="./assets/images/link.png" alt="" class="design-link">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg col-md col-6 design-grid">
+                    <div>
+                      <img
+                      src="assets/images/Girls-demo.png"
+                      alt="holo"
+                      class="img-fluid mb-5 design-thumbnail"
+                      />
+                      <div class="designlink-icon">
+                        <img src="./assets/images/link.png" alt="" class="design-link">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Resume Section -->
+      <section id="resumeSec" class="mb-5 resumeSec" onmouseover="hideMenu()">
+        <div class="container">
+          <div class="col-lg-10 offset-lg-1 col-12 col-md-12">
+            <div class="heading d-flex align-items-baseline mb-4">
+              <img
+                src="assets/images/resume-icon.svg"
+                alt="aboutme"
+                class="img-fluid me-2"
+              />
+              <h1>
+                Resume
+                <div class=""></div>
+              </h1>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-5 col-12">
+                <img
+                  src="assets/images/resume-thumbnail.svg"
+                  alt="aboutme"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-lg-8 col-md-7 col-12">
+                <p class="desc mb-4">
+                  To those HRs out there who need a more organized and minimal
+                  version, you can download the PDF version here:
+                </p>
+                <a
+                  class="button"
+                  href="assets/Resume.pdf"
+                  target="_blank"
+                  ><img
+                    src="assets/images/downloadIcon.svg"
+                    alt="download"
+                    class="img-fluid me-2 download-icon"
+                  />
+                  Download Resume</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Resume Section ends here -->
+      <img
+      src="assets/images/darkMode-icon.svg"
+      alt="dark-mode"
+      id="darkMode"
+      class="img-fluid dark-mode-icon p-3"
+      onclick="onClickDarkMode()"
+    />
+    <img
+      src="assets/images/hambergerMenu.svg"
+      alt="menu"
+      id="Menu"
+      class="img-fluid hambergermenu-icon p-3"
+      onmouseover="showMenu(this)"
+    />
+    <!-- <img
+      src="assets/images/hambergerMenu.svg"
+      alt="menu"
+      id="Menu"
+      class="img-fluid hambergermenu-icon p-3"
+      onclick="showMenu(this)"
+    /> -->
+    <div class="sideMenuHld" id="sideMenu">
+      <div>
+          <svg class="sidemenu-icon" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" onclick="scrollToElem('Aboutme')">
+            <path d="M7 7C8.93375 7 10.5 5.43375 10.5 3.5C10.5 1.56625 8.93375 0 7 0C5.06625 0 3.5 1.56625 3.5 3.5C3.5 5.43375 5.06625 7 7 7ZM7 8.75C4.66375 8.75 0 9.9225 0 12.25V14H14V12.25C14 9.9225 9.33625 8.75 7 8.75Z" fill="#0D2F3F"/>
+          </svg>
+         
+          <svg class="sidemenu-icon" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg" onclick="scrollToElem('workNEducationSection')">
+            <path d="M13.65 2.94737H10.6167V1.47368C10.6167 0.655789 9.94175 0 9.1 0H6.06667C5.22492 0 4.55 0.655789 4.55 1.47368V2.94737H1.51667C0.674917 2.94737 0.00758333 3.60316 0.00758333 4.42105L0 12.5263C0 13.3442 0.674917 14 1.51667 14H13.65C14.4917 14 15.1667 13.3442 15.1667 12.5263V4.42105C15.1667 3.60316 14.4917 2.94737 13.65 2.94737ZM9.1 2.94737H6.06667V1.47368H9.1V2.94737Z" fill="#0D2F3F"/>
+          </svg>
+          
+          <svg class="sidemenu-icon" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg" onclick="scrollToElem('workNEducationSection')"> 
+            <path d="M2.9697 7.91778V11.0289L8.16667 14L13.3636 11.0289V7.91778L8.16667 10.8889L2.9697 7.91778ZM8.16667 0L0 4.66667L8.16667 9.33333L14.8485 5.51444V10.8889H16.3333V4.66667L8.16667 0Z" fill="#0D2F3F"/>
+          </svg>
+            
+          <svg class="sidemenu-icon" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" onmouseover="scrollToElem('toolSection')">
+            <path d="M3.91996 6.36125C4.14746 6.58875 5.03996 7.525 5.03996 7.525L5.52996 7.0175L4.75996 6.22125L6.23871 4.64625C6.23871 4.64625 5.57371 3.99875 5.86246 4.2525C6.14246 3.21125 5.88871 2.05625 5.10121 1.2425C4.31371 0.4375 3.20246 0.175 2.20496 0.44625L3.89371 2.19625L3.44746 3.91125L1.79371 4.36625L0.104959 2.61625C-0.166291 3.64875 0.087459 4.795 0.874959 5.6C1.69746 6.4575 2.87871 6.7025 3.91996 6.36125ZM9.55496 8.05875L7.51621 10.0712L10.8762 13.5538C11.1475 13.8425 11.515 13.9825 11.8737 13.9825C12.2325 13.9825 12.5912 13.8425 12.8712 13.5538C13.4225 12.985 13.4225 12.0662 12.8712 11.4975L9.55496 8.05875ZM14 2.21375L11.8562 0L5.53871 6.5275L6.30871 7.32375L2.53746 11.2262L1.67121 11.69L0.454959 13.6763L0.761209 14L2.68621 12.74L3.13246 11.8475L6.91246 7.945L7.68246 8.74125L14 2.21375Z" fill="#0D2F3F"/>
+          </svg>
+          
+          <svg class="sidemenu-icon" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg" onclick="scrollToElem('certificateSection')">
+            <path d="M11.4316 1.79394L6.073 0.031953C6.00835 0.010651 5.92161 0 5.83488 0C5.74814 0 5.66141 0.010651 5.59675 0.031953L0.238126 1.79394C0.107236 1.83654 0 1.98261 0 2.11651V9.45658C0 9.59048 0.0898887 9.76698 0.198701 9.85067L5.6346 13.9376C5.68979 13.9787 5.76076 14 5.8333 14C5.90584 14 5.97838 13.9787 6.032 13.9376L11.4679 9.85067C11.5767 9.7685 11.6666 9.592 11.6666 9.45658V2.11651C11.6698 1.98261 11.5625 1.83806 11.4316 1.79394ZM8.71289 4.39278L5.3602 8.84643C5.33663 8.87756 5.30578 8.90288 5.27016 8.92033C5.23454 8.93779 5.19515 8.94689 5.15519 8.94689C5.11524 8.94689 5.07585 8.93779 5.04023 8.92033C5.0046 8.90288 4.97375 8.87756 4.95018 8.84643L2.95686 6.19889C2.89694 6.11825 2.95686 6.00565 3.05937 6.00565H3.92987C4.0103 6.00565 4.08757 6.04369 4.13488 6.10608L5.15519 7.46028L7.53488 4.29845C7.58219 4.23606 7.65788 4.19802 7.73988 4.19802H8.61039C8.71289 4.19954 8.77282 4.31214 8.71289 4.39278Z" fill="#0D2F3F"/>
+          </svg>
+            
+          <svg class="sidemenu-icon" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg" onclick="scrollToElem('languageSection')">
+            <path d="M2.61918 13.234C2.61039 12.796 2.9947 12.4375 3.45364 12.4375H5.23807V12.2813H1.63259C1.17365 12.2813 0.789342 11.9228 0.798136 11.4848C0.806644 11.0603 1.16973 10.7187 1.61641 10.7187H5.23807V10.5625H0.834602C0.375667 10.5625 -0.00864628 10.204 0.000148003 9.76599C0.00865582 9.34156 0.371771 9.00001 0.818446 9.00001H5.2381V8.84377H1.65304C1.19411 8.84377 0.809795 8.48527 0.818589 8.04728C0.827097 7.62285 1.19021 7.2813 1.63689 7.2813H6.46561L5.57515 6.66317C5.20957 6.40939 5.12876 5.92081 5.39462 5.57183C5.66049 5.22289 6.17236 5.14576 6.53794 5.39951L10.0717 7.85265C10.197 7.93962 10.299 8.05365 10.3693 8.18542C10.4395 8.31719 10.4762 8.46296 10.4762 8.61083V12.47C10.4762 12.905 10.1626 13.2829 9.719 13.3826L7.41384 13.9003C7.11894 13.9665 6.817 14 6.51405 14H3.43748C2.99081 14 2.62769 13.6584 2.61918 13.234ZM4.71746 7.06249H5.76083L5.44037 6.84003C4.90816 6.47059 4.85849 5.72202 5.34956 5.29412L4.97705 4.83748C4.69509 4.49183 4.16265 4.42265 3.80601 4.69836C3.4604 4.96553 3.40116 5.44886 3.67558 5.78527L4.71746 7.06249ZM12.8328 7.00499L12.6895 2.83639C12.6746 2.40515 12.2964 2.06705 11.8446 2.08118C11.3928 2.09535 11.0386 2.45639 11.0534 2.88763L11.0896 3.93804L8.12294 0.301301C7.84851 -0.0351089 7.34311 -0.0987377 6.98705 0.155613C6.61961 0.418086 6.55939 0.927799 6.84135 1.27345L9.04391 3.9735L8.91474 4.06951L6.1994 0.740851C5.92497 0.404441 5.41957 0.340812 5.06351 0.595163C4.69606 0.857635 4.63585 1.36735 4.91781 1.713L7.62321 5.02946L7.49405 5.12547L5.26898 2.39782C4.99455 2.06141 4.48916 1.99779 4.13309 2.25214C3.76565 2.51461 3.70543 3.02432 3.98739 3.36997L5.4785 5.19787C5.83648 4.9721 6.3108 4.97133 6.67274 5.22259L10.2065 7.6757C10.5189 7.89254 10.7054 8.24213 10.7054 8.6108V9.07562L12.4546 7.77545C12.5768 7.6846 12.6748 7.56744 12.7405 7.43353C12.8063 7.29963 12.8379 7.15278 12.8328 7.00499Z" fill="#0D2F3F"/>
+          </svg>
+          
+          <svg class="sidemenu-icon" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" onclick="scrollToElem('DesignSection')">
+            <path d="M4.56723 8.45852C3.4702 8.52906 2.47461 8.94688 1.90969 10.4355C1.84543 10.6053 1.69094 10.7084 1.51074 10.7084C1.20695 10.7084 0.267695 9.95176 0 9.7691C0.000273438 12.0209 1.03742 14 3.50027 14C5.57457 14 7.00027 12.8032 7.00027 10.7136C7.00027 10.6285 6.9825 10.5473 6.97375 10.4639L4.56723 8.45852ZM12.5207 0C12.1062 0 11.7176 0.183477 11.4212 0.449805C5.83187 5.44277 5.25027 5.56008 5.25027 7.0298C5.25027 7.40441 5.33914 7.76152 5.48898 8.08801L7.23406 9.54215C7.43121 9.59137 7.63438 9.625 7.84629 9.625C9.54461 9.625 10.529 8.38168 13.6202 2.61242C13.822 2.22004 14.0003 1.79621 14.0003 1.35488C14.0003 0.564375 13.2893 0 12.5207 0Z" fill="#0D2F3F"/>
+          </svg>
+            
+          <svg class="sidemenu-icon" viewBox="0 0 11 14" xmlns="http://www.w3.org/2000/svg" onclick="scrollToElem('resumeSec')">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.62993 0V2.8C5.62993 3.668 6.32763 4.375 7.18421 4.375H10.5V12.88C10.5 13.496 10.0026 14 9.39474 14H1.10526C0.497368 14 0 13.496 0 12.88V1.12C0 0.504 0.497368 0 1.10526 0H5.62993ZM10.3274 3.46492H7.18429C6.82162 3.46492 6.52804 3.16742 6.52804 2.79992V0.262418C6.52804 0.118918 6.64202 0.00341797 6.78363 0.00341797C7.04613 0.00341797 7.29481 0.094418 7.49514 0.262418L10.1305 2.48842C10.3654 2.68442 10.5001 2.97842 10.5001 3.28992C10.5001 3.38792 10.4241 3.46492 10.3274 3.46492Z" fill="#0D2F3F"/>
+          </svg>
+      </div>
+    </div>
+  </div> 
+    <!-- Dark mode Function -->
+    <script>
+
+      function onClickDarkMode() {
+      
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        var darkmodeImg = document.getElementById("darkMode");
+        if (darkmodeImg.src.match("assets/images/darkMode-icon.svg")) {
+          darkmodeImg.src = "assets/images/light-mode-icon.svg";
+        } else {
+          darkmodeImg.src = "assets/images/darkMode-icon.svg";
+        }
+      }
+      function showMenu(x) {
+        document.getElementById("sideMenu").style.display = "flex";
+        document.getElementById("Menu").style.display = "none";
+      }
+      function scrollToElem(elem) {
+        var element = document.getElementById(elem);
+        element.scrollIntoView();
+      }
+
+      function hideMenu() {
+        document.getElementById("sideMenu").style.display = "none";
+        document.getElementById("Menu").style.display = "block";
+      }
+    </script>
+    <!-- AOS Plugin -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>
