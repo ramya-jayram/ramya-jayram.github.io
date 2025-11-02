@@ -288,14 +288,14 @@ h1 div {
 }
 
 .toolscardhld:hover{
-  border: 1px solid #fcb26d !important;
+  border: 1px solid #aaaaaa !important;
   background-color: transparent !important;
 }
 .dark-mode .toolscardhld {
   border: 1px solid #2d2d2d !important;
 }
 .dark-mode .toolscardhld:hover {
-  border: 1px solid #fcb26d !important;
+  border: 1px solid #6c6c6c !important;
   background-color: transparent !important;
 }
 
@@ -689,5 +689,8 @@ h1 div {
   .ps-5 {
     margin-left: -35px !important;
   }
-
+  .workNEducationSection ul {
+  list-style: none;
+  font-size: 14px;
+}
 }
