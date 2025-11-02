@@ -27,10 +27,10 @@ scrollbar-width: none;  /* Firefox */
   background-color: #000000;
 }
 .dark-mode .li-dot {
-  border: 1px dashed #fff;
+  background-color: #eab780;
 }
 .dark-mode .left-line {
-  border: 1px dashed #fff;
+  background-color: #2d2d2d;
 }
 nav{
   width: 100vh !important;
@@ -58,12 +58,12 @@ nav{
   top: 0px;
 }
 .IntroSection p {
-  font-family: "Fira Sans";
+  font-family: fira Sans !important;
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 500 !important;
+  font-size: 16px;
   line-height: 28px;
-  letter-spacing: 0.06tem;
+  letter-spacing: 0.08tem;
   color: #222222;
 }
 .dark-mode .IntroSection p {
@@ -92,9 +92,17 @@ nav{
   bottom: 0;
   right: 0;
   cursor: pointer;
+  transform: scale(0.90);
+  transform-origin: center;
+}
+.dark-mode #darkMode {
+  filter: brightness(0) invert(1);
+}
+.dark-mode .dark-mode-icon {
+  transform: scale(1);
 }
 h1 {
-  font-family: fira Sans;
+  font-family: fira Sans !important;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -110,50 +118,136 @@ h1 div {
   list-style: none;
   font-size: 1rem;
 }
+.work-list--collapsed {
+  margin-top: 2.5rem;
+}
+.education-list{
+  margin-top: 2.5rem;
+}
+.workNEducationSection .work-item-extra__content {
+  opacity: 1;
+  transform: none;
+}
+.workNEducationSection .work-item-extra__content--visible {
+  animation: workTimelineFadeUp 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+.workNEducationSection .work-item-extra__dot-wrapper {
+  opacity: 1;
+  transform: none;
+}
+.workNEducationSection .work-item-extra__dot {
+  opacity: 1;
+  transform: none;
+}
+.workNEducationSection .work-item-extra__dot-wrapper--visible {
+  animation: workTimelineFadeUp 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+.workNEducationSection .work-list--collapsed .work-item-extra {
+  display: none;
+}
+@keyframes workTimelineFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.workNEducationSection .work-view-more {
+  padding-left: 2rem;
+  margin-top: 0.75rem;
+  
+}
+.workNEducationSection .work-toggle-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+.workNEducationSection .work-toggle-dots--hidden {
+  display: none;
+}
+.workNEducationSection .work-view-more--hidden {
+  display: none;
+}
+.workNEducationSection .work-toggle-dots:focus-visible {
+  outline: 2px solid #f4b477;
+  outline-offset: 4px;
+}
+.workNEducationSection .work-toggle-dots__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #192b35;
+  transition: background-color 0.2s ease;
+}
+.workNEducationSection .work-toggle-dots:hover .work-toggle-dots__dot,
+.workNEducationSection .work-toggle-dots:focus-visible .work-toggle-dots__dot {
+  background-color: #f4b477;
+}
+.dark-mode .workNEducationSection .work-toggle-dots__dot {
+  background-color: #ffffff;
+}
+.dark-mode .workNEducationSection .work-toggle-dots:hover .work-toggle-dots__dot,
+.dark-mode
+.workNEducationSection
+  .work-toggle-dots:focus-visible
+  .work-toggle-dots__dot {
+  background-color: #f4b477;
+}
 .workNEducationSection ul li {
   position: relative;
   padding-left: 2rem;
 }
 .li-dot {
   position: absolute;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
-  top: 5px;
-  left: -15px;
-  border: 1px dashed #000;
+  top: 16px;
+  left: -13px;
+  background-color: #eab780;
 }
-.li-dot div {
-  position: absolute;
-  height: 10px;
-  width: 10px;
+.li-dot .purple-dot,
+.li-dot .red-dot,
+.li-dot .yellow-dot,
+.li-dot .pink-dot,
+.li-dot .work-item-extra__dot {
+  display: block;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  top: 4px;
-  left: 4px;
+  background-color: #eab780;
 }
+
 .left-line {
   width: 2px;
-  height: 88%;
   position: absolute;
-  top: 26px;
+  top: -10px;
+  bottom: -10px;
   left: -6px;
-  /* border: 1px dashed #0d2f3f; */
-  background: url("assets/images/dashedBorder.svg");
+  background-color: #dfdfdf;
 }
+
 .purple-dot {
-  background: #cc74aa;
+  background: #eab780;
 }
 .red-dot {
-  background: #fb2f6b;
+  background: #eab780;
 }
 .yellow-dot {
-  background: #ffb863;
+  background: #eab780;
 }
 .pink-dot {
-  background: #fc5668;
+  background: #eab780;
 }
 .companyName {
-  font-family: Fira sans;
+  font-family: Fira sans !important;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -161,20 +255,20 @@ h1 div {
   display: inline-block;
 }
 .duration {
-  font-family: Fira Sans;
+  font-family: Fira Sans !important;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
 }
 .designation {
-  font-family: Fira Sans;
+  font-family: Fira Sans !important;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 14px;
 }
 .location {
-  font-family: Fira Sans;
+  font-family: Fira Sans !important;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -197,16 +291,23 @@ h1 div {
   border: 1px solid #fcb26d !important;
   background-color: transparent !important;
 }
+.dark-mode .toolscardhld {
+  border: 1px solid #2d2d2d !important;
+}
+.dark-mode .toolscardhld:hover {
+  border: 1px solid #fcb26d !important;
+  background-color: transparent !important;
+}
 
 .toolscardhld .toolsTilte {
-  font-family: Fira Sans;
+  font-family: Fira Sans !important;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 0px;
 }
 .toolscardhld .toolsDesc {
-  font-family: Fira Sans;
+  font-family: Fira Sans !important;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -214,17 +315,25 @@ h1 div {
   margin: 0;
 }
 .certificationHld {
-  border-right: 1px solid #fcb26d;
+  border-right: 2px solid #efefef;
+  margin-bottom: 16px;
+}
+.dark-mode .certificationHld {
+  border-right: 2px solid #2d2d2d !important;
 }
 .certificationTitle {
   font-family: Fira Sans;
-  font-style: normal;
+  font-style: normal !important;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom: 8px;
 }
 .certificationTitle:hover {
   color: #FCB26D !important;
+}
+.dark-mode #certificateSection .certification-arrow {
+  filter: brightness(0) invert(1);
 }
 .dark-mode .certificationHld div svg {
   filter: brightness(0) invert(1);
@@ -234,7 +343,7 @@ h1 div {
   color: #FCB26D !important;
 }
 .certificationFrom {
-  font-family: Fira Sans;
+  font-family: Fira Sans !important;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -244,7 +353,7 @@ h1 div {
   list-style: none;
   display: inline;
   font-weight: 400;
-  font-family: Fira Sans;
+  font-family: Fira Sans !important;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -263,14 +372,28 @@ h1 div {
   content: none;
 }
 .design-thumbnail {
-  /*border-radius: 10px; */
+  border-radius: 10px;
   position: relative;
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
+  border: 1px solid #dfdfdf;
+  /* box-shadow: inset 0 0 0 10px #dfdfdf; */
+}
+.dark-mode .design-thumbnail {
+  border-color: #2d2d2d;
+  /* box-shadow: inset 0 0 0 10px #2d2d2d; */
 }
 .design-grid {
   position: relative;
+}
+.resumeSec .design-grid {
+  max-width: 240px;
+  margin-left: 0;
+  margin-right: auto;
+}
+.resumeSec .designlink-icon {
+  top: 50%;
 }
 .designlink-icon {
   transition: .5s ease;
@@ -289,14 +412,14 @@ h1 div {
   opacity: 1;
 }
 .design-link {
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
 }
 .DesignTabs .nav-tabs {
   border-bottom: none;
 }
 .DesignTabs .nav-tabs .nav-link {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans" !important;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -319,7 +442,7 @@ h1 div {
 }
 .DesignTabs .nav-tabs .nav-item.show .nav-link,
 .DesignTabs .nav-tabs .nav-link.active {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans" !important;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -332,7 +455,7 @@ h1 div {
 }
 .DesignTabs .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans" !important;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -347,7 +470,7 @@ h1 div {
   border: none;
 }
 .resumeSec .desc {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans" !important;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
@@ -363,8 +486,7 @@ h1 div {
     brightness(102%) contrast(97%);
 }
 .resumeSec .button {
-  color: #fff;
-  font-family: "PT Sans";
+  font-family: "PT Sans" !important;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -374,9 +496,11 @@ h1 div {
   border-radius: 4px;
   padding: 12px 30px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 .resumeSec .button:hover {
-  color: #fff;
+  color: #ffffff;
+  background: #fcb26d;
   text-decoration: none;
 }
 .download-icon {
