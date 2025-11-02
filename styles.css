@@ -319,7 +319,7 @@ h1 div {
   margin-bottom: 16px;
 }
 .dark-mode .certificationHld {
-  border-right: 2px solid #2d2d2d !important;
+  border-right: 2px solid #2d2d2d;
 }
 .certificationTitle {
   font-family: Fira Sans;
@@ -600,7 +600,7 @@ h1 div {
     padding-bottom: 20px;
   }
   .certificationHld {
-    border-right: none;
+    border-right: none !important;
     margin-top: 0%;
     margin-right: 0%;
   }
@@ -635,7 +635,11 @@ h1 div {
     font-size: 12px;
     line-height: 12px;
   }
-
+  .certificationHld {
+    border-right: none !important;
+    margin-top: 0%;
+    margin-right: 0%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .DesignTabs .mobTabsview {
@@ -648,6 +652,7 @@ h1 div {
   .sideMenuHld {
     display: none !important;
   }
+  
 }
 @media only screen and (max-width: 480px) {
   .DesignTabs .mobTabsview {
@@ -682,7 +687,52 @@ h1 div {
     padding-bottom: 20px;
   }
   .certificationHld {
-    border-right: none;
+    border-right: none !important;
+    margin-top: 0%;
+    margin-right: 0%;
+  }
+  .ps-5 {
+    margin-left: -35px !important;
+  }
+  .workNEducationSection ul {
+  list-style: none;
+  font-size: 14px;
+}
+}
+@media only screen and (max-width: 375px) {
+  .DesignTabs .mobTabsview {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .heyIntrotext {
+    padding-top: 24px;
+    font-family: "Space Mono" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+  }
+  .ramyaNameImg {
+    width: 400px;
+    height: auto;
+  }
+  .whatIDo {
+    font-family: "Space Mono" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+  }
+  .aboutme {
+    font-family: "Fira Sans" !important;
+    font-size: 15px !important;
+    line-height: 20px;
+    letter-spacing: 0.05tem;
+    color: #222222;
+  }
+  .aboutimage {
+    padding-bottom: 20px;
+  }
+  .certificationHld {
+    border-right: none !important;
     margin-top: 0%;
     margin-right: 0%;
   }
