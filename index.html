@@ -182,7 +182,7 @@
                         Appiness Interactive Pvt. Ltd.
                       </p>
                       <span class="duration">( Jun ‘21 - APR ‘24 )</span>
-                      <p class="designation">UI/UX Designer</p>
+                      <p class="designation">Ace - UI/UX Designer</p>
                       <p class="location">
                         <img
                           src="assets/images/location-icon.svg"
@@ -1526,6 +1526,137 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <div id="cursor" aria-hidden="true"></div>
+    <script>
+      (function () {
+        var cursor = document.getElementById("cursor");
+        if (!cursor) {
+          return;
+        }
+
+        var finePointerQuery = window.matchMedia("(pointer: fine)");
+        if (!finePointerQuery.matches) {
+          cursor.style.display = "none";
+          return;
+        }
+
+        var prefersReducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+        var ease = prefersReducedMotion ? 1 : 0.16;
+        var currentX = window.innerWidth / 2;
+        var currentY = window.innerHeight / 2;
+        var targetX = currentX;
+        var targetY = currentY;
+        var isMouseDown = false;
+        var isFlashingUp = false;
+        var upTimeoutId = null;
+        var lastTarget = null;
+        var lastHoverState = "default";
+
+        var interactiveSelector =
+          "a,button,[role='button'],.design-grid,.toolscardhld";
+        var textSelector =
+          "p,span,li,em,strong,small,mark,code,pre,blockquote,h1,h2,h3,h4,h5,h6,label";
+
+        var setState = function (state) {
+          cursor.classList.remove(
+            "cursor--text",
+            "cursor--pointer",
+            "cursor--down",
+            "cursor--up",
+            "cursor--hidden"
+          );
+          if (state && state !== "default") {
+            cursor.classList.add("cursor--" + state);
+          }
+        };
+
+        var getHoverState = function (target) {
+          if (!target) {
+            return "default";
+          }
+          if (target.closest(interactiveSelector)) {
+            return "pointer";
+          }
+          if (target.closest(textSelector)) {
+            return "text";
+          }
+          var computedCursor = window.getComputedStyle(target).cursor;
+          if (computedCursor === "text") {
+            return "text";
+          }
+          return "default";
+        };
+
+        var updateHoverState = function (target) {
+          lastHoverState = getHoverState(target);
+          setState(lastHoverState);
+        };
+
+        var animate = function () {
+          currentX += (targetX - currentX) * ease;
+          currentY += (targetY - currentY) * ease;
+          cursor.style.transform =
+            "translate3d(" +
+            currentX +
+            "px, " +
+            currentY +
+            "px, 0) translate3d(-50%, -50%, 0)";
+          requestAnimationFrame(animate);
+        };
+
+        var handleMouseMove = function (event) {
+          targetX = event.clientX;
+          targetY = event.clientY;
+
+          if (isMouseDown || isFlashingUp) {
+            return;
+          }
+
+          if (event.target !== lastTarget) {
+            lastTarget = event.target;
+            updateHoverState(event.target);
+          }
+        };
+
+        var handleMouseDown = function () {
+          isMouseDown = true;
+          if (upTimeoutId) {
+            clearTimeout(upTimeoutId);
+            upTimeoutId = null;
+          }
+          setState("down");
+        };
+
+        var handleMouseUp = function (event) {
+          isMouseDown = false;
+          isFlashingUp = true;
+          setState("up");
+          upTimeoutId = window.setTimeout(function () {
+            isFlashingUp = false;
+            updateHoverState(event.target || lastTarget);
+          }, 160);
+        };
+
+        var handleMouseLeave = function () {
+          cursor.classList.add("cursor--hidden");
+        };
+
+        var handleMouseEnter = function () {
+          cursor.classList.remove("cursor--hidden");
+        };
+
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mousedown", handleMouseDown);
+        window.addEventListener("mouseup", handleMouseUp);
+        document.addEventListener("mouseleave", handleMouseLeave);
+        document.addEventListener("mouseenter", handleMouseEnter);
+
+        animate();
+      })();
     </script>
 
   </body>
