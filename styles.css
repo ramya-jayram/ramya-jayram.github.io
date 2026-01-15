@@ -619,8 +619,8 @@ h1 div {
   .dark-mode-icon{
     bottom: unset !important;
     top: 0px !important;
-    left: 0 !important;
-    right: auto !important;
+    left: auto !important;
+    right: 0 !important;
     z-index: 9999;
   }
   .DesignTabs .tab-content img {
@@ -796,5 +796,79 @@ h1 div {
   .workNEducationSection ul {
     list-style: none;
     font-size: 14px;
+  }
+}
+
+#cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fcb26d;
+  border: none;
+  border-radius: 50%;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 999999;
+  transform: translate3d(-50%, -50%, 0);
+  transition: width 160ms ease, height 160ms ease, background-color 160ms ease,
+    border-color 160ms ease, opacity 160ms ease, border-radius 160ms ease;
+}
+
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+
+@media (pointer: coarse) {
+  #cursor {
+    display: none;
+  }
+}
+
+#cursor.cursor--text {
+  width: 2px;
+  height: 22px;
+  border-radius: 0;
+  background-color: #2a6bff;
+}
+
+#cursor.cursor--pointer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(42, 107, 255, 0.18);
+  border: 1px solid rgba(42, 107, 255, 0.6);
+}
+
+#cursor.cursor--down {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(231, 61, 72, 0.22);
+  border: 1px solid rgba(231, 61, 72, 0.6);
+}
+
+#cursor.cursor--up {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e73d48;
+  border: none;
+}
+
+#cursor.cursor--hidden {
+  opacity: 0;
+}
+
+.dark-mode #cursor {
+  background-color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #cursor {
+    transition-duration: 80ms;
   }
 }
