@@ -35,6 +35,7 @@ scrollbar-width: none;  /* Firefox */
 nav{
   width: 100vh !important;
 }
+
 .about-ramya{
   overflow-y: scroll;
   overflow-x: hidden;
@@ -81,6 +82,7 @@ nav{
   width: 500px;
   height: auto;
 }
+
 .whatIDo {
   font-family: "Space Mono" !important;
   font-style: normal;
